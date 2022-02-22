@@ -18,4 +18,5 @@ if __name__ == "__main__":
     recordroute = "Record-Route: <sip:%s:%d;lr>" % (ipaddress,PORT)
     topvia = "Via: SIP/2.0/UDP %s:%d" % (ipaddress,PORT)
     server = socketserver.UDPServer((HOST, PORT), sipfullproxy.UDPHandler)
+    print("Proxy server started at <%s:%s>" % (ipaddress, PORT))
     server.serve_forever()
