@@ -256,7 +256,7 @@ class UDPHandler(socketserver.BaseRequestHandler):
             #if registrar.has_key(fromm):
             if fromm in registrar:
                 del registrar[fromm]
-                self.sendResponse("200 0K")
+                self.sendResponse("200 Vporiadku")
                 return
         else:
             now = int(time.time())
@@ -268,7 +268,7 @@ class UDPHandler(socketserver.BaseRequestHandler):
         logging.debug("Expires= %d" % expires)
         registrar[fromm]=[contact,self.socket,self.client_address,validity]
         self.debugRegister()
-        self.sendResponse("200 0K")
+        self.sendResponse("200 Vporiadku")
         
     def processInvite(self):
         logging.debug("-----------------")
@@ -277,7 +277,7 @@ class UDPHandler(socketserver.BaseRequestHandler):
         origin = self.getOrigin()
         #if len(origin) == 0 or not registrar.has_key(origin):
         if len(origin) == 0 or not origin in registrar:
-            self.sendResponse("400 Bad Request")
+            self.sendResponse("400 Zlá požiadavka")
             return
         destination = self.getDestination()
         if len(destination) > 0:
@@ -297,9 +297,9 @@ class UDPHandler(socketserver.BaseRequestHandler):
                 logging.info("<<< %s" % data[0])
                 logging.debug("---\n<< server send [%d]:\n%s\n---" % (len(text),text))
             else:
-                self.sendResponse("480 Temporarily Unavailable")
+                self.sendResponse("480 Dočasne nedostupné")
         else:
-            self.sendResponse("500 Server Internal Error")
+            self.sendResponse("500 Server vnútorný error")
                 
     def processAck(self):
         logging.debug("--------------")
@@ -330,7 +330,7 @@ class UDPHandler(socketserver.BaseRequestHandler):
         origin = self.getOrigin()
         #if len(origin) == 0 or not registrar.has_key(origin):
         if len(origin) == 0 or not origin in registrar:
-            self.sendResponse("400 Bad Request")
+            self.sendResponse("400 Zlá požiadavka")
             return
         destination = self.getDestination()
         if len(destination) > 0:
@@ -350,9 +350,9 @@ class UDPHandler(socketserver.BaseRequestHandler):
                 logging.info("<<< %s" % data[0])
                 logging.debug("---\n<< server send [%d]:\n%s\n---" % (len(text),text))    
             else:
-                self.sendResponse("406 Not Acceptable")
+                self.sendResponse("406 neakceptovateľné")
         else:
-            self.sendResponse("500 Server Internal Error")
+            self.sendResponse("500 Server vnútorný Error")
                 
     def processCode(self):
         origin = self.getOrigin()
@@ -398,11 +398,11 @@ class UDPHandler(socketserver.BaseRequestHandler):
             elif rx_update.search(request_uri):
                 self.processNonInvite()
             elif rx_subscribe.search(request_uri):
-                self.sendResponse("200 0K")
+                self.sendResponse("200 Vporiadku")
             elif rx_publish.search(request_uri):
-                self.sendResponse("200 0K")
+                self.sendResponse("200 Vporiadku")
             elif rx_notify.search(request_uri):
-                self.sendResponse("200 0K")
+                self.sendResponse("200 Vporiadku")
             elif rx_code.search(request_uri):
                 self.processCode()
             else:
