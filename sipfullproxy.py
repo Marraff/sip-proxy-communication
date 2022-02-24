@@ -102,17 +102,6 @@ class UDPHandler(socketserver.BaseRequestHandler):
             if uri in registrar:
                 uri = "sip:%s" % registrar[uri][0]
             
-                if (uri == 100):
-                    method = 'Skusam'
-                if (uri == 200):
-                    method = 'Vporiadku'
-                if (uri == 486):
-                    method = 'Obsadene'
-                if (uri == 202):
-                    method = 'Akceptovane'
-                if (uri == 180):
-                    method = 'Zvonim'
-            
                 self.data[0] = "%s %s SIP/2.0" % (method,uri)
                 
                 print('uri: ',uri)
@@ -223,6 +212,22 @@ class UDPHandler(socketserver.BaseRequestHandler):
         text = "\r\n".join(data).encode()
         self.socket.sendto(text,self.client_address)
         showtime()
+        ######
+        if (data[0] == 'SIP/2.0 100 Trying'):
+            data[0] = 'SIP/2.0 100 Skusam'
+        if (data[0] == 'SIP/2.0 200 Ok'):
+            data[0] = 'SIP/2.0 200 Vporiadku'
+        if (data[0] == 'SIP/2.0 486 Busy Here'):
+            data[0] = 'SIP/2.0 486 Obsadene'
+        if (data[0] == 'SIP/2.0 202 Accepted'):
+            data[0] = 'SIP/2.0 202 Akceptovane'
+        if (data[0] == 'SIP/2.0 180 Ringing'):
+            data[0] = 'SIP/2.0 180 Zvonim'
+        if (data[0] == 'SIP/2.0 603 Decline'):
+            data[0] = 'SIP/2.0 603 Zrusene'
+
+
+        #print("<<< %s" % data[0])
         logging.info("<<< %s" % data[0])
         logging.debug("---\n<< server send [%d]:\n%s\n---" % (len(text),text))
         
@@ -310,6 +315,22 @@ class UDPHandler(socketserver.BaseRequestHandler):
                 text = "\r\n".join(data).encode()
                 socket.sendto(text , claddr)
                 showtime()
+                ######
+                if (data[0] == 'SIP/2.0 100 Trying'):
+                    data[0] = 'SIP/2.0 100 Skusam'
+                if (data[0] == 'SIP/2.0 200 Ok'):
+                    data[0] = 'SIP/2.0 200 Vporiadku'
+                if (data[0] == 'SIP/2.0 486 Busy Here'):
+                    data[0] = 'SIP/2.0 486 Obsadene'
+                if (data[0] == 'SIP/2.0 202 Accepted'):
+                    data[0] = 'SIP/2.0 202 Akceptovane'
+                if (data[0] == 'SIP/2.0 180 Ringing'):
+                    data[0] = 'SIP/2.0 180 Zvonim'
+                if (data[0] == 'SIP/2.0 603 Decline'):
+                    data[0] = 'SIP/2.0 603 Zrusene'
+
+
+                #print("<<< %s" % data[0])
                 logging.info("<<< %s" % data[0])
                 logging.debug("---\n<< server send [%d]:\n%s\n---" % (len(text),text))
             else:
@@ -336,6 +357,21 @@ class UDPHandler(socketserver.BaseRequestHandler):
                 text = "\r\n".join(data).encode()
                 socket.sendto(text,claddr)
                 showtime()
+                #####
+                if (data[0] == 'SIP/2.0 100 Trying'):
+                    data[0] = 'SIP/2.0 100 Skusam'
+                if (data[0] == 'SIP/2.0 200 Ok'):
+                    data[0] = 'SIP/2.0 200 Vporiadku'
+                if (data[0] == 'SIP/2.0 486 Busy Here'):
+                    data[0] = 'SIP/2.0 486 Obsadene'
+                if (data[0] == 'SIP/2.0 202 Accepted'):
+                    data[0] = 'SIP/2.0 202 Akceptovane'
+                if (data[0] == 'SIP/2.0 180 Ringing'):
+                    data[0] = 'SIP/2.0 180 Zvonim'
+                if (data[0] == 'SIP/2.0 603 Decline'):
+                    data[0] = 'SIP/2.0 603 Zrusene'
+
+                #print("<<< %s" % data[0])
                 logging.info("<<< %s" % data[0])
                 logging.debug( "---\n<< server send [%d]:\n%s\n---" % (len(text),text))
                 
@@ -363,6 +399,22 @@ class UDPHandler(socketserver.BaseRequestHandler):
                 text = "\r\n".join(data).encode()
                 socket.sendto(text , claddr)
                 showtime()
+                ####
+                if (data[0] == 'SIP/2.0 100 Trying'):
+                    data[0] = 'SIP/2.0 100 Skusam'
+                if (data[0] == 'SIP/2.0 200 Ok'):
+                    data[0] = 'SIP/2.0 200 Vporiadku'
+                if (data[0] == 'SIP/2.0 486 Busy Here'):
+                    data[0] = 'SIP/2.0 486 Obsadene'
+                if (data[0] == 'SIP/2.0 202 Accepted'):
+                    data[0] = 'SIP/2.0 202 Akceptovane'
+                if (data[0] == 'SIP/2.0 180 Ringing'):
+                    data[0] = 'SIP/2.0 180 Zvonim'
+                if (data[0] == 'SIP/2.0 603 Decline'):
+                    data[0] = 'SIP/2.0 603 Zrusene'
+
+
+                #print("<<< %s" % data[0])
                 logging.info("<<< %s" % data[0])
                 logging.debug("---\n<< server send [%d]:\n%s\n---" % (len(text),text))    
             else:
@@ -383,6 +435,21 @@ class UDPHandler(socketserver.BaseRequestHandler):
                 text = "\r\n".join(data).encode()
                 socket.sendto(text,claddr)
                 showtime()
+                ####
+                if (data[0] == 'SIP/2.0 100 Trying'):
+                    data[0] = 'SIP/2.0 100 Skusam'
+                if (data[0] == 'SIP/2.0 200 Ok'):
+                    data[0] = 'SIP/2.0 200 Vporiadku'
+                if (data[0] == 'SIP/2.0 486 Busy Here'):
+                    data[0] = 'SIP/2.0 486 Obsadene'
+                if (data[0] == 'SIP/2.0 202 Accepted'):
+                    data[0] = 'SIP/2.0 202 Akceptovane'
+                if (data[0] == 'SIP/2.0 180 Ringing'):
+                    data[0] = 'SIP/2.0 180 Zvonim'
+                if (data[0] == 'SIP/2.0 603 Decline'):
+                    data[0] = 'SIP/2.0 603 Zrusene'
+
+                #print("<<< %s" % data[0])
                 logging.info("<<< %s" % data[0])
                 logging.debug("---\n<< server send [%d]:\n%s\n---" % (len(text),text))
                 
@@ -434,6 +501,20 @@ class UDPHandler(socketserver.BaseRequestHandler):
         request_uri = self.data[0]
         if rx_request_uri.search(request_uri) or rx_code.search(request_uri):
             showtime()
+
+            if (request_uri== 'SIP/2.0 100 Trying'):
+                request_uri = 'SIP/2.0 100 Skusam'
+            if (request_uri == 'SIP/2.0 200 Ok'):
+                request_uri = 'SIP/2.0 200 Vporiadku'
+            if (request_uri == 'SIP/2.0 486 Busy Here'):
+                request_uri = 'SIP/2.0 486 Obsadene'
+            if (request_uri == 'SIP/2.0 202 Accepted'):
+               request_uri = 'SIP/2.0 202 Akceptovane'
+            if (request_uri == 'SIP/2.0 180 Ringing'):
+                request_uri = 'SIP/2.0 180 Zvonim'
+            if (request_uri == 'SIP/2.0 603 Decline'):
+                request_uri = 'SIP/2.0 603 Zrusene'
+
             logging.info(">>> %s" % request_uri)
             logging.debug("---\n>> server received [%d]:\n%s\n---" %  (len(data),data))
             logging.debug("Received from %s:%d" % self.client_address)
