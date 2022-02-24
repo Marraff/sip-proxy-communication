@@ -101,7 +101,23 @@ class UDPHandler(socketserver.BaseRequestHandler):
             #if registrar.has_key(uri):
             if uri in registrar:
                 uri = "sip:%s" % registrar[uri][0]
+            
+                if (uri == 100):
+                    method = 'Skusam'
+                if (uri == 200):
+                    method = 'Vporiadku'
+                if (uri == 486):
+                    method = 'Obsadene'
+                if (uri == 202):
+                    method = 'Akceptovane'
+                if (uri == 180):
+                    method = 'Zvonim'
+            
                 self.data[0] = "%s %s SIP/2.0" % (method,uri)
+                
+                print('uri: ',uri)
+                print('method: ',method)
+
         
     def removeRouteHeader(self):
         # delete Route
