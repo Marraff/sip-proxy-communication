@@ -1,1481 +1,673 @@
-19:35:06:INFO: SIP bol spusteny na - Wed, 23 Feb 2022 19:35:06 
-19:35:06:INFO:LAPTOP-K5R9Q7M8
-19:35:06:INFO:10.10.28.79
-19:35:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-19:35:08:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:55512
-19:35:08:INFO:<<< SIP/2.0 200 0K
-19:35:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-19:35:08:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:55512
-19:35:08:INFO:<<< SIP/2.0 200 0K
-19:35:09:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-19:35:09:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:61649
-19:35:09:INFO:<<< SIP/2.0 200 0K
-19:35:17:INFO:>>> INVITE sip:mobil@10.10.28.79 SIP/2.0
-19:35:17:INFO:destination mobil@10.10.28.79
-19:35:17:INFO:<<< INVITE sip:mobil@10.10.28.79 SIP/2.0
-19:35:17:INFO:>>> SIP/2.0 100 Trying
-19:35:17:INFO:<<< SIP/2.0 100 Trying
-19:35:17:INFO:>>> SIP/2.0 180 Ringing
-19:35:17:INFO:<<< SIP/2.0 180 Ringing
-19:35:22:INFO:>>> CANCEL sip:mobil@10.10.28.79 SIP/2.0
-19:35:22:INFO:destination mobil@10.10.28.79
-19:35:22:INFO:<<< CANCEL sip:mobil@10.10.28.79 SIP/2.0
-19:35:23:INFO:>>> SIP/2.0 200 Ok
-19:35:23:INFO:<<< SIP/2.0 200 Ok
-19:35:23:INFO:>>> SIP/2.0 487 Request terminated
-19:35:23:INFO:<<< SIP/2.0 487 Request terminated
-19:35:23:INFO:>>> ACK sip:mobil@10.10.28.79 SIP/2.0
-19:35:23:INFO:destination mobil@10.10.28.79
-19:35:23:INFO:<<< ACK sip:mobil@10.10.28.79 SIP/2.0
-19:54:45:INFO: SIP bol spusteny na - Wed, 23 Feb 2022 19:54:45 
-19:54:45:INFO:LAPTOP-K5R9Q7M8
-19:54:45:INFO:10.10.28.79
-19:54:48:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-19:54:48:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:54436
-19:54:48:INFO:<<< SIP/2.0 200 Vporiadku
-19:54:48:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-19:54:48:INFO:<<< SIP/2.0 200 Vporiadku
-19:54:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-19:54:49:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:55512
-19:54:49:INFO:<<< SIP/2.0 200 Vporiadku
-19:55:17:INFO:>>> INVITE sip:mobil@10.10.28.79 SIP/2.0
-19:55:17:INFO:destination mobil@10.10.28.79
-19:55:17:INFO:<<< INVITE sip:mobil@10.10.28.79 SIP/2.0
-19:55:17:INFO:>>> SIP/2.0 100 Trying
-19:55:17:INFO:<<< SIP/2.0 100 Trying
-19:55:18:INFO:>>> SIP/2.0 180 Ringing
-19:55:18:INFO:<<< SIP/2.0 180 Ringing
-19:55:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-19:55:20:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:55512
-19:55:20:INFO:<<< SIP/2.0 200 Vporiadku
-19:55:29:INFO:>>> SIP/2.0 200 Ok
-19:55:29:INFO:<<< SIP/2.0 200 Ok
-19:55:29:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:55:29:INFO:destination mobil@10.10.28.79
-19:55:29:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:00:INFO:>>> BYE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:00:INFO:destination mobil@10.10.28.79
-19:56:00:INFO:<<< BYE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:00:INFO:>>> SIP/2.0 200 Ok
-19:56:00:INFO:<<< SIP/2.0 200 Ok
-19:56:21:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-19:56:21:INFO:destination mraff@10.10.28.79
-19:56:21:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-19:56:21:INFO:>>> SIP/2.0 100 Trying
-19:56:21:INFO:<<< SIP/2.0 100 Trying
-19:56:21:INFO:>>> SIP/2.0 180 Ringing
-19:56:21:INFO:<<< SIP/2.0 180 Ringing
-19:56:24:INFO:>>> SIP/2.0 200 Ok
-19:56:24:INFO:<<< SIP/2.0 200 Ok
-19:56:24:INFO:>>> ACK sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:56:24:INFO:destination mraff@10.10.28.79
-19:56:24:INFO:<<< ACK sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:56:47:INFO:>>> REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:56:47:INFO:destination mraff@10.10.28.79
-19:56:47:INFO:<<< REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:56:47:INFO:>>> SIP/2.0 202 Accepted
-19:56:47:INFO:<<< SIP/2.0 202 Accepted
-19:56:47:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:47:INFO:destination mobil@10.10.28.79
-19:56:47:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:47:INFO:>>> SIP/2.0 100 Trying
-19:56:47:INFO:<<< SIP/2.0 100 Trying
-19:56:47:INFO:>>> SIP/2.0 200 Ok
-19:56:47:INFO:<<< SIP/2.0 200 Ok
-19:56:47:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:47:INFO:destination mobil@10.10.28.79
-19:56:47:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:47:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:47:INFO:<<< SIP/2.0 200 Vporiadku
-19:56:48:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-19:56:48:INFO:destination martin@10.10.28.79
-19:56:48:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-19:56:48:INFO:>>> SIP/2.0 100 Trying
-19:56:48:INFO:<<< SIP/2.0 100 Trying
-19:56:48:INFO:>>> SIP/2.0 486 Busy here
-19:56:48:INFO:<<< SIP/2.0 486 Busy here
-19:56:48:INFO:>>> ACK sip:martin@10.10.28.79 SIP/2.0
-19:56:48:INFO:destination martin@10.10.28.79
-19:56:48:INFO:<<< ACK sip:martin@10.10.28.79 SIP/2.0
-19:56:48:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:48:INFO:<<< SIP/2.0 200 Vporiadku
-19:56:48:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:48:INFO:destination mobil@10.10.28.79
-19:56:48:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:48:INFO:>>> SIP/2.0 100 Trying
-19:56:48:INFO:<<< SIP/2.0 100 Trying
-19:56:48:INFO:>>> SIP/2.0 200 Ok
-19:56:48:INFO:<<< SIP/2.0 200 Ok
-19:56:48:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:56:48:INFO:destination mobil@10.10.28.79
-19:56:48:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:57:12:INFO:>>> BYE sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:57:12:INFO:destination mraff@10.10.28.79
-19:57:12:INFO:<<< BYE sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:57:12:INFO:>>> SIP/2.0 200 Ok
-19:57:12:INFO:<<< SIP/2.0 200 Ok
-19:57:18:INFO:>>> MESSAGE sip:martin@10.10.28.79 SIP/2.0
-19:57:18:INFO:destination martin@10.10.28.79
-19:57:18:INFO:<<< MESSAGE sip:martin@10.10.28.79 SIP/2.0
-19:57:18:INFO:>>> SIP/2.0 200 Ok
-19:57:18:INFO:<<< SIP/2.0 200 Ok
-19:57:19:INFO:>>> MESSAGE sip:martin@10.10.28.79 SIP/2.0
-19:57:19:INFO:destination martin@10.10.28.79
-19:57:19:INFO:<<< MESSAGE sip:martin@10.10.28.79 SIP/2.0
-19:57:20:INFO:>>> MESSAGE sip:martin@10.10.28.79 SIP/2.0
-19:57:20:INFO:destination martin@10.10.28.79
-19:57:20:INFO:<<< MESSAGE sip:martin@10.10.28.79 SIP/2.0
-19:57:20:INFO:>>> SIP/2.0 200 Ok
-19:57:20:INFO:<<< SIP/2.0 200 Ok
-19:57:21:INFO:>>> SIP/2.0 200 Ok
-19:57:21:INFO:<<< SIP/2.0 200 Ok
-19:57:50:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-19:57:50:INFO:destination mraff@10.10.28.79
-19:57:50:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-19:57:50:INFO:>>> SIP/2.0 100 Trying
-19:57:50:INFO:<<< SIP/2.0 100 Trying
-19:57:50:INFO:>>> SIP/2.0 180 Ringing
-19:57:50:INFO:<<< SIP/2.0 180 Ringing
-19:57:53:INFO:>>> SIP/2.0 200 Ok
-19:57:53:INFO:<<< SIP/2.0 200 Ok
-19:57:54:INFO:>>> SIP/2.0 200 Ok
-19:57:54:INFO:<<< SIP/2.0 200 Ok
-19:57:54:INFO:>>> ACK sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:57:54:INFO:destination mraff@10.10.28.79
-19:57:54:INFO:<<< ACK sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:57:54:INFO:>>> ACK sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:57:54:INFO:destination mraff@10.10.28.79
-19:57:54:INFO:<<< ACK sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:58:24:INFO:>>> REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:58:24:INFO:destination mraff@10.10.28.79
-19:58:24:INFO:<<< REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:58:24:INFO:>>> SIP/2.0 202 Accepted
-19:58:24:INFO:<<< SIP/2.0 202 Accepted
-19:58:24:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:24:INFO:destination mobil@10.10.28.79
-19:58:24:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:24:INFO:>>> SIP/2.0 100 Trying
-19:58:24:INFO:<<< SIP/2.0 100 Trying
-19:58:24:INFO:>>> SIP/2.0 200 Ok
-19:58:24:INFO:<<< SIP/2.0 200 Ok
-19:58:24:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:24:INFO:destination mobil@10.10.28.79
-19:58:24:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:24:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:24:INFO:<<< SIP/2.0 200 Vporiadku
-19:58:24:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-19:58:24:INFO:destination martin@10.10.28.79
-19:58:24:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-19:58:25:INFO:>>> SIP/2.0 100 Trying
-19:58:25:INFO:<<< SIP/2.0 100 Trying
-19:58:25:INFO:>>> SIP/2.0 486 Busy here
-19:58:25:INFO:<<< SIP/2.0 486 Busy here
-19:58:25:INFO:>>> ACK sip:martin@10.10.28.79 SIP/2.0
-19:58:25:INFO:destination martin@10.10.28.79
-19:58:25:INFO:<<< ACK sip:martin@10.10.28.79 SIP/2.0
-19:58:25:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:25:INFO:<<< SIP/2.0 200 Vporiadku
-19:58:25:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:25:INFO:destination mobil@10.10.28.79
-19:58:25:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:25:INFO:>>> SIP/2.0 100 Trying
-19:58:25:INFO:<<< SIP/2.0 100 Trying
-19:58:25:INFO:>>> SIP/2.0 200 Ok
-19:58:25:INFO:<<< SIP/2.0 200 Ok
-19:58:25:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:25:INFO:destination mobil@10.10.28.79
-19:58:25:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:>>> REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:58:57:INFO:destination mraff@10.10.28.79
-19:58:57:INFO:<<< REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:58:57:INFO:>>> SIP/2.0 202 Accepted
-19:58:57:INFO:<<< SIP/2.0 202 Accepted
-19:58:57:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:destination mobil@10.10.28.79
-19:58:57:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:>>> SIP/2.0 100 Trying
-19:58:57:INFO:<<< SIP/2.0 100 Trying
-19:58:57:INFO:>>> SIP/2.0 200 Ok
-19:58:57:INFO:<<< SIP/2.0 200 Ok
-19:58:57:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:destination mobil@10.10.28.79
-19:58:57:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:<<< SIP/2.0 200 Vporiadku
-19:58:57:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-19:58:57:INFO:destination martin@10.10.28.79
-19:58:57:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-19:58:57:INFO:>>> SIP/2.0 100 Trying
-19:58:57:INFO:<<< SIP/2.0 100 Trying
-19:58:57:INFO:>>> SIP/2.0 486 Busy here
-19:58:57:INFO:<<< SIP/2.0 486 Busy here
-19:58:57:INFO:>>> ACK sip:martin@10.10.28.79 SIP/2.0
-19:58:57:INFO:destination martin@10.10.28.79
-19:58:57:INFO:<<< ACK sip:martin@10.10.28.79 SIP/2.0
-19:58:57:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:<<< SIP/2.0 200 Vporiadku
-19:58:57:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:destination mobil@10.10.28.79
-19:58:57:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:57:INFO:>>> SIP/2.0 100 Trying
-19:58:57:INFO:<<< SIP/2.0 100 Trying
-19:58:57:INFO:>>> SIP/2.0 200 Ok
-19:58:57:INFO:<<< SIP/2.0 200 Ok
-19:58:58:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:58:58:INFO:destination mobil@10.10.28.79
-19:58:58:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:>>> REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:59:34:INFO:destination mraff@10.10.28.79
-19:59:34:INFO:<<< REFER sip:mraff@10.10.28.79:54436;transport=udp SIP/2.0
-19:59:34:INFO:>>> SIP/2.0 202 Accepted
-19:59:34:INFO:<<< SIP/2.0 202 Accepted
-19:59:34:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:destination mobil@10.10.28.79
-19:59:34:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:>>> SIP/2.0 100 Trying
-19:59:34:INFO:<<< SIP/2.0 100 Trying
-19:59:34:INFO:>>> SIP/2.0 200 Ok
-19:59:34:INFO:<<< SIP/2.0 200 Ok
-19:59:34:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:destination mobil@10.10.28.79
-19:59:34:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:<<< SIP/2.0 200 Vporiadku
-19:59:34:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-19:59:34:INFO:destination martin@10.10.28.79
-19:59:34:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-19:59:34:INFO:>>> SIP/2.0 100 Trying
-19:59:34:INFO:<<< SIP/2.0 100 Trying
-19:59:34:INFO:>>> SIP/2.0 486 Busy here
-19:59:34:INFO:<<< SIP/2.0 486 Busy here
-19:59:34:INFO:>>> ACK sip:martin@10.10.28.79 SIP/2.0
-19:59:34:INFO:destination martin@10.10.28.79
-19:59:34:INFO:<<< ACK sip:martin@10.10.28.79 SIP/2.0
-19:59:34:INFO:>>> NOTIFY sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:<<< SIP/2.0 200 Vporiadku
-19:59:34:INFO:>>> INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:destination mobil@10.10.28.79
-19:59:34:INFO:<<< INVITE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:34:INFO:>>> SIP/2.0 100 Trying
-19:59:34:INFO:<<< SIP/2.0 100 Trying
-19:59:34:INFO:>>> SIP/2.0 200 Ok
-19:59:34:INFO:<<< SIP/2.0 200 Ok
-19:59:35:INFO:>>> ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:35:INFO:destination mobil@10.10.28.79
-19:59:35:INFO:<<< ACK sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:49:INFO:>>> BYE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:49:INFO:destination mobil@10.10.28.79
-19:59:49:INFO:<<< BYE sip:mobil@10.10.39.85:55512;transport=udp SIP/2.0
-19:59:49:INFO:>>> SIP/2.0 200 Ok
-19:59:49:INFO:<<< SIP/2.0 200 Ok
-20:03:48:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:03:48:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:54436
-20:03:48:INFO:<<< SIP/2.0 200 Vporiadku
-20:03:48:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-20:03:48:INFO:<<< SIP/2.0 200 Vporiadku
-20:15:55:INFO: SIP bol spusteny na - Wed, 23 Feb 2022 20:15:55 
-20:15:55:INFO:LAPTOP-K5R9Q7M8
-20:15:55:INFO:10.10.28.79
-20:15:57:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:15:57:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:52647
-20:15:57:INFO:<<< SIP/2.0 200 Vporiadku
-20:15:57:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-20:15:57:INFO:<<< SIP/2.0 200 Vporiadku
-20:16:05:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-20:16:05:INFO:destination martin@10.10.28.79
-20:16:05:INFO:<<< SIP/2.0 480 Doèasne nedostupné
-20:16:05:INFO:>>> ACK sip:martin@10.10.28.79 SIP/2.0
-20:16:05:INFO:destination martin@10.10.28.79
-20:16:44:INFO: SIP bol spusteny na - Wed, 23 Feb 2022 20:16:44 
-20:16:44:INFO:LAPTOP-K5R9Q7M8
-20:16:44:INFO:10.10.28.79
-20:16:48:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:16:48:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:58008
-20:16:48:INFO:<<< SIP/2.0 200 Vporiadku
-20:16:48:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:16:48:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:58008
-20:16:48:INFO:<<< SIP/2.0 200 Vporiadku
-20:16:48:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:16:48:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:52647
-20:16:48:INFO:<<< SIP/2.0 200 Vporiadku
-20:16:53:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-20:16:53:INFO:destination martin@10.10.28.79
-20:16:53:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-20:16:53:INFO:>>> SIP/2.0 100 Trying
-20:16:53:INFO:<<< SIP/2.0 100 Trying
-20:16:54:INFO:>>> SIP/2.0 180 Ringing
-20:16:54:INFO:<<< SIP/2.0 180 Ringing
-20:16:56:INFO:>>> SIP/2.0 200 Ok
-20:16:56:INFO:<<< SIP/2.0 200 Ok
-20:16:57:INFO:>>> ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:16:57:INFO:destination martin@10.10.28.79
-20:16:57:INFO:<<< ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:17:28:INFO:>>> BYE sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:17:28:INFO:destination martin@10.10.28.79
-20:17:28:INFO:<<< BYE sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:17:28:INFO:>>> SIP/2.0 200 Ok
-20:17:28:INFO:<<< SIP/2.0 200 Ok
-20:26:32:INFO: SIP bol spusteny na - Wed, 23 Feb 2022 20:26:32 
-20:26:32:INFO:LAPTOP-K5R9Q7M8
-20:26:32:INFO:10.10.28.79
-20:26:35:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:26:35:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:58008
-20:26:35:INFO:<<< SIP/2.0 200 Vporiadku
-20:26:35:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:26:35:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:58008
-20:26:35:INFO:<<< SIP/2.0 200 Vporiadku
-20:26:36:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:26:36:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:52857
-20:26:36:INFO:<<< SIP/2.0 200 Vporiadku
-20:26:36:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-20:26:36:INFO:<<< SIP/2.0 200 Vporiadku
-20:26:53:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-20:26:53:INFO:destination martin@10.10.28.79
-20:26:53:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-20:26:53:INFO:>>> SIP/2.0 100 Trying
-20:26:53:INFO:<<< SIP/2.0 100 Trying
-20:26:54:INFO:>>> SIP/2.0 180 Ringing
-20:26:54:INFO:<<< SIP/2.0 180 Ringing
-20:26:56:INFO:>>> SIP/2.0 200 Ok
-20:26:56:INFO:<<< SIP/2.0 200 Ok
-20:26:57:INFO:>>> ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:26:57:INFO:destination martin@10.10.28.79
-20:26:57:INFO:<<< ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:29:20:INFO: SIP bol spusteny na - Wed, 23 Feb 2022 20:29:20 
-20:29:20:INFO:LAPTOP-K5R9Q7M8
-20:29:20:INFO:10.10.28.79
-20:29:23:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:29:23:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:58288
-20:29:23:INFO:<<< SIP/2.0 200 Vporiadku
-20:29:23:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-20:29:23:INFO:<<< SIP/2.0 200 Vporiadku
-20:29:23:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:29:23:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:58008
-20:29:23:INFO:<<< SIP/2.0 200 Vporiadku
-20:29:31:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:29:31:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:58008
-20:29:31:INFO:<<< SIP/2.0 200 Vporiadku
-20:29:33:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-20:29:33:INFO:destination martin@10.10.28.79
-20:29:33:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-20:29:33:INFO:>>> SIP/2.0 100 Trying
-20:29:33:INFO:<<< SIP/2.0 100 Trying
-20:29:33:INFO:>>> SIP/2.0 180 Ringing
-20:29:33:INFO:<<< SIP/2.0 180 Ringing
-20:29:35:INFO:>>> SIP/2.0 200 Ok
-20:29:35:INFO:<<< SIP/2.0 200 Ok
-20:29:35:INFO:>>> ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:29:35:INFO:destination martin@10.10.28.79
-20:29:35:INFO:<<< ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:29:52:INFO:>>> BYE sip:mraff@10.10.28.79:58288;transport=udp SIP/2.0
-20:29:52:INFO:destination mraff@10.10.28.79
-20:29:52:INFO:<<< BYE sip:mraff@10.10.28.79:58288;transport=udp SIP/2.0
-20:29:52:INFO:>>> SIP/2.0 200 Ok
-20:29:52:INFO:<<< SIP/2.0 200 Ok
-20:32:27:INFO: SIP bol spusteny na - Wed, 23 Feb 2022 20:32:27 
-20:32:27:INFO:LAPTOP-K5R9Q7M8
-20:32:27:INFO:10.10.28.79
-20:32:28:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:32:28:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:58288
-20:32:28:INFO:<<< SIP/2.0 200 Vporiadku
-20:32:29:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:32:29:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:58008
-20:32:29:INFO:<<< SIP/2.0 200 Vporiadku
-20:32:29:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:32:29:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:58008
-20:32:29:INFO:<<< SIP/2.0 200 Vporiadku
-20:32:36:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-20:32:36:INFO:destination martin@10.10.28.79
-20:32:36:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-20:32:36:INFO:>>> SIP/2.0 100 Trying
-20:32:36:INFO:<<< SIP/2.0 100 Trying
-20:32:37:INFO:>>> SIP/2.0 180 Ringing
-20:32:37:INFO:<<< SIP/2.0 180 Ringing
-20:32:39:INFO:>>> SIP/2.0 200 Ok
-20:32:39:INFO:<<< SIP/2.0 200 Ok
-20:32:40:INFO:>>> ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:32:40:INFO:destination martin@10.10.28.79
-20:32:40:INFO:<<< ACK sip:mobil@10.10.39.85:58008;transport=udp SIP/2.0
-20:33:01:INFO:>>> BYE sip:mraff@10.10.28.79:58288;transport=udp SIP/2.0
-20:33:01:INFO:destination mraff@10.10.28.79
-20:33:01:INFO:<<< BYE sip:mraff@10.10.28.79:58288;transport=udp SIP/2.0
-20:33:01:INFO:>>> SIP/2.0 200 Ok
-20:33:01:INFO:<<< SIP/2.0 200 Ok
-20:33:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-20:33:07:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:58288
-20:33:07:INFO:<<< SIP/2.0 200 Vporiadku
-08:36:41:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 08:36:41 
-08:36:41:INFO:LAPTOP-K5R9Q7M8
-08:36:41:INFO:147.175.163.19
-08:38:22:INFO:>>> REGISTER sip:147.175.163.19 SIP/2.0
-08:38:22:INFO:From: mraff@147.175.163.19 - Contact: 147.175.163.19:54298
-08:38:22:INFO:<<< SIP/2.0 200 Vporiadku
-08:38:22:INFO:>>> PUBLISH sip:mraff@147.175.163.19 SIP/2.0
-08:38:22:INFO:<<< SIP/2.0 200 Vporiadku
-11:40:48:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 11:40:48 
-11:40:48:INFO:LAPTOP-K5R9Q7M8
-11:40:48:INFO:10.10.28.79
-11:41:15:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-11:41:15:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:51357
-11:41:15:INFO:<<< SIP/2.0 200 Vporiadku
-11:41:15:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-11:41:15:INFO:<<< SIP/2.0 200 Vporiadku
-11:41:18:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-11:41:18:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:51357
-11:41:18:INFO:<<< SIP/2.0 200 Vporiadku
-11:41:21:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-11:41:21:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:51357
-11:41:21:INFO:<<< SIP/2.0 200 Vporiadku
-11:46:02:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 11:46:02 
-11:46:02:INFO:LAPTOP-K5R9Q7M8
-11:46:02:INFO:10.10.28.79
-11:46:23:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-11:46:23:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:56324
-11:46:23:INFO:<<< SIP/2.0 200 Vporiadku
-11:46:23:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-11:46:23:INFO:<<< SIP/2.0 200 Vporiadku
-11:46:26:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-11:46:26:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:56324
-11:46:26:INFO:<<< SIP/2.0 200 Vporiadku
-11:48:28:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 11:48:28 
-11:48:28:INFO:LAPTOP-K5R9Q7M8
-11:48:28:INFO:10.10.28.79
-11:48:32:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-11:48:32:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53166
-11:48:32:INFO:<<< SIP/2.0 200 Vporiadku
-11:48:32:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-11:48:32:INFO:<<< SIP/2.0 200 Vporiadku
-11:51:00:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 11:51:00 
-11:51:00:INFO:LAPTOP-K5R9Q7M8
-11:51:00:INFO:10.10.28.79
-11:51:01:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-11:51:01:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53166
-11:51:01:INFO:<<< SIP/2.0 200 Vporiadku
-11:57:32:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-11:57:32:INFO:<<< SIP/2.0 200 Vporiadku
-12:00:01:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:00:01:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53166
-12:00:01:INFO:<<< SIP/2.0 200 Vporiadku
-12:03:48:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 12:03:48 
-12:03:48:INFO:LAPTOP-K5R9Q7M8
-12:03:48:INFO:10.10.28.79
-12:03:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:03:49:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53166
-12:03:49:INFO:<<< SIP/2.0 200 Vporiadku
-12:06:32:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-12:06:32:INFO:<<< SIP/2.0 200 Vporiadku
-12:08:28:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:08:28:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53166
-12:08:28:INFO:<<< SIP/2.0 200 Vporiadku
-12:08:55:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:08:55:INFO:destination mraff@10.10.28.79
-12:08:55:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:08:55:INFO:>>> SIP/2.0 100 Trying
-12:08:55:INFO:<<< SIP/2.0 100 Trying
-12:08:56:INFO:>>> SIP/2.0 180 Ringing
-12:08:56:INFO:<<< SIP/2.0 180 Ringing
-12:09:16:INFO:>>> SIP/2.0 603 Decline
-12:09:16:INFO:<<< SIP/2.0 603 Decline
-12:09:16:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-12:09:16:INFO:destination mraff@10.10.28.79
-12:09:16:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-12:10:54:INFO:>>> MESSAGE sip:mraff2@10.10.28.79 SIP/2.0
-12:10:54:INFO:destination mraff2@10.10.28.79
-12:10:54:INFO:<<< MESSAGE sip:mraff2@10.10.28.79 SIP/2.0
-12:10:54:INFO:>>> SIP/2.0 200 Ok
-12:10:54:INFO:<<< SIP/2.0 200 Ok
-12:10:55:INFO:>>> MESSAGE sip:mraff2@10.10.28.79 SIP/2.0
-12:10:55:INFO:destination mraff2@10.10.28.79
-12:10:55:INFO:<<< MESSAGE sip:mraff2@10.10.28.79 SIP/2.0
-12:10:55:INFO:>>> SIP/2.0 200 Ok
-12:10:55:INFO:<<< SIP/2.0 200 Ok
-12:11:07:INFO:>>> MESSAGE sip:mraff@10.10.28.79 SIP/2.0
-12:11:07:INFO:destination mraff@10.10.28.79
-12:11:07:INFO:<<< MESSAGE sip:mraff@10.10.28.79 SIP/2.0
-12:11:07:INFO:>>> SIP/2.0 200 Ok
-12:11:07:INFO:<<< SIP/2.0 200 Ok
-12:11:08:INFO:>>> MESSAGE sip:mraff@10.10.28.79 SIP/2.0
-12:11:08:INFO:destination mraff@10.10.28.79
-12:11:08:INFO:<<< MESSAGE sip:mraff@10.10.28.79 SIP/2.0
-12:11:08:INFO:>>> SIP/2.0 200 Ok
-12:11:08:INFO:<<< SIP/2.0 200 Ok
-12:11:43:INFO:>>> INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:11:43:INFO:destination mraff2@10.10.28.79
-12:11:43:INFO:<<< INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:11:43:INFO:>>> SIP/2.0 100 Trying
-12:11:43:INFO:<<< SIP/2.0 100 Trying
-12:11:43:INFO:>>> SIP/2.0 486 Busy here
-12:11:43:INFO:<<< SIP/2.0 486 Busy here
-12:11:43:INFO:>>> ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:11:43:INFO:destination mraff2@10.10.28.79
-12:11:43:INFO:<<< ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:12:06:INFO:>>> INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:12:06:INFO:destination mraff2@10.10.28.79
-12:12:06:INFO:<<< INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:12:06:INFO:>>> SIP/2.0 100 Trying
-12:12:06:INFO:<<< SIP/2.0 100 Trying
-12:12:06:INFO:>>> SIP/2.0 486 Busy here
-12:12:06:INFO:<<< SIP/2.0 486 Busy here
-12:12:06:INFO:>>> ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:12:06:INFO:destination mraff2@10.10.28.79
-12:12:06:INFO:<<< ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:12:26:INFO:>>> INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:12:26:INFO:destination mraff2@10.10.28.79
-12:12:26:INFO:<<< INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:12:26:INFO:>>> SIP/2.0 100 Trying
-12:12:26:INFO:<<< SIP/2.0 100 Trying
-12:12:26:INFO:>>> SIP/2.0 486 Busy here
-12:12:26:INFO:<<< SIP/2.0 486 Busy here
-12:12:26:INFO:>>> ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:12:26:INFO:destination mraff2@10.10.28.79
-12:12:26:INFO:<<< ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:12:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:12:49:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53166
-12:12:49:INFO:<<< SIP/2.0 200 Vporiadku
-12:15:58:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 12:15:58 
-12:15:58:INFO:LAPTOP-K5R9Q7M8
-12:15:58:INFO:10.10.28.79
-12:16:02:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:02:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:02:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:02:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:02:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:02:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:02:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-12:16:02:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:09:INFO:>>> MESSAGE sip:mraff2@10.10.28.79 SIP/2.0
-12:16:09:INFO:destination mraff2@10.10.28.79
-12:16:09:INFO:<<< MESSAGE sip:mraff2@10.10.28.79 SIP/2.0
-12:16:09:INFO:>>> SIP/2.0 200 Ok
-12:16:09:INFO:<<< SIP/2.0 200 Ok
-12:16:17:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:17:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:17:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:17:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:17:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:17:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:46:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:46:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:46:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:46:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:46:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:46:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:51:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:51:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:51:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:51:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:51:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:51:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:54:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:54:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:54:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:54:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:16:54:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53508
-12:16:54:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:57:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-12:16:57:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:59:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-12:16:59:INFO:<<< SIP/2.0 200 Vporiadku
-12:16:59:INFO:>>> PUBLISH sip:mraff2@10.10.28.79 SIP/2.0
-12:16:59:INFO:<<< SIP/2.0 200 Vporiadku
-12:17:28:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:17:28:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:34461
-12:17:28:INFO:<<< SIP/2.0 200 Vporiadku
-12:17:28:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:17:28:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:34461
-12:17:28:INFO:<<< SIP/2.0 200 Vporiadku
-12:17:28:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:17:28:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:34461
-12:17:28:INFO:<<< SIP/2.0 200 Vporiadku
-12:18:03:INFO:>>> INVITE sip:ja@10.10.28.79 SIP/2.0
-12:18:03:INFO:destination ja@10.10.28.79
-12:18:03:INFO:<<< INVITE sip:ja@10.10.28.79 SIP/2.0
-12:18:03:INFO:>>> SIP/2.0 100 Trying
-12:18:03:INFO:<<< SIP/2.0 100 Trying
-12:18:04:INFO:>>> SIP/2.0 180 Ringing
-12:18:04:INFO:<<< SIP/2.0 180 Ringing
-12:18:19:INFO:>>> SIP/2.0 603 Decline
-12:18:19:INFO:<<< SIP/2.0 603 Decline
-12:18:19:INFO:>>> ACK sip:ja@10.10.28.79 SIP/2.0
-12:18:19:INFO:destination ja@10.10.28.79
-12:18:19:INFO:<<< ACK sip:ja@10.10.28.79 SIP/2.0
-12:20:04:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:20:04:INFO:destination mraff@10.10.28.79
-12:20:04:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:20:04:INFO:>>> SIP/2.0 100 Trying
-12:20:04:INFO:<<< SIP/2.0 100 Trying
-12:20:04:INFO:>>> SIP/2.0 180 Ringing
-12:20:04:INFO:<<< SIP/2.0 180 Ringing
-12:20:10:INFO:>>> SIP/2.0 603 Decline
-12:20:10:INFO:<<< SIP/2.0 603 Decline
-12:20:10:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-12:20:10:INFO:destination mraff@10.10.28.79
-12:20:10:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-12:20:30:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:20:30:INFO:destination mraff@10.10.28.79
-12:20:30:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:20:30:INFO:>>> SIP/2.0 100 Trying
-12:20:30:INFO:<<< SIP/2.0 100 Trying
-12:20:31:INFO:>>> SIP/2.0 180 Ringing
-12:20:31:INFO:<<< SIP/2.0 180 Ringing
-12:20:37:INFO:>>> SIP/2.0 603 Decline
-12:20:37:INFO:<<< SIP/2.0 603 Decline
-12:20:37:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-12:20:37:INFO:destination mraff@10.10.28.79
-12:20:37:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-12:22:16:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:22:16:INFO:destination mraff@10.10.28.79
-12:22:16:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:22:17:INFO:>>> SIP/2.0 100 Trying
-12:22:17:INFO:<<< SIP/2.0 100 Trying
-12:22:17:INFO:>>> SIP/2.0 180 Ringing
-12:22:17:INFO:<<< SIP/2.0 180 Ringing
-12:22:19:INFO:>>> SIP/2.0 200 Ok
-12:22:19:INFO:<<< SIP/2.0 200 Ok
-12:22:19:INFO:>>> SIP/2.0 200 Ok
-12:22:19:INFO:<<< SIP/2.0 200 Ok
-12:22:19:INFO:>>> ACK sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:22:19:INFO:destination mraff@10.10.28.79
-12:22:19:INFO:<<< ACK sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:22:19:INFO:>>> ACK sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:22:19:INFO:destination mraff@10.10.28.79
-12:22:19:INFO:<<< ACK sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:14:INFO:>>> INVITE sip:ja@10.10.39.85:34461;transport=udp SIP/2.0
-12:23:14:INFO:destination ja@10.10.28.79
-12:23:14:INFO:<<< INVITE sip:ja@10.10.39.85:34461;transport=udp SIP/2.0
-12:23:14:INFO:>>> INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:23:14:INFO:destination mraff2@10.10.28.79
-12:23:14:INFO:<<< INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:23:14:INFO:>>> SIP/2.0 100 Trying
-12:23:14:INFO:<<< SIP/2.0 100 Trying
-12:23:14:INFO:>>> SIP/2.0 100 Trying
-12:23:14:INFO:<<< SIP/2.0 100 Trying
-12:23:14:INFO:>>> SIP/2.0 200 Ok
-12:23:14:INFO:<<< SIP/2.0 200 Ok
-12:23:14:INFO:>>> SIP/2.0 180 Ringing
-12:23:14:INFO:<<< SIP/2.0 180 Ringing
-12:23:14:INFO:>>> ACK sip:ja@10.10.39.85:34461;transport=udp SIP/2.0
-12:23:14:INFO:destination ja@10.10.28.79
-12:23:14:INFO:<<< ACK sip:ja@10.10.39.85:34461;transport=udp SIP/2.0
-12:23:24:INFO:>>> BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:24:INFO:destination mraff@10.10.28.79
-12:23:24:INFO:<<< BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:25:INFO:>>> BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:25:INFO:destination mraff@10.10.28.79
-12:23:25:INFO:<<< BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:26:INFO:>>> BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:26:INFO:destination mraff@10.10.28.79
-12:23:26:INFO:<<< BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:28:INFO:>>> BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:28:INFO:destination mraff@10.10.28.79
-12:23:28:INFO:<<< BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:32:INFO:>>> BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:32:INFO:destination mraff@10.10.28.79
-12:23:32:INFO:<<< BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:35:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:23:35:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53988
-12:23:35:INFO:<<< SIP/2.0 200 Vporiadku
-12:23:35:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:23:35:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53988
-12:23:35:INFO:<<< SIP/2.0 200 Vporiadku
-12:23:35:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-12:23:35:INFO:<<< SIP/2.0 200 Vporiadku
-12:23:35:INFO:>>> PUBLISH sip:mraff2@10.10.28.79 SIP/2.0
-12:23:35:INFO:<<< SIP/2.0 200 Vporiadku
-12:23:36:INFO:>>> BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:36:INFO:destination mraff@10.10.28.79
-12:23:36:INFO:<<< BYE sip:mraff@10.10.28.79:53508;transport=udp SIP/2.0
-12:23:36:INFO:>>> SIP/2.0 481 Call/transaction does not exist
-12:23:36:INFO:<<< SIP/2.0 481 Call/transaction does not exist
-12:23:45:INFO:>>> INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:23:45:INFO:destination mraff2@10.10.28.79
-12:23:45:INFO:<<< INVITE sip:mraff2@10.10.28.79 SIP/2.0
-12:23:45:INFO:>>> SIP/2.0 100 Trying
-12:23:45:INFO:<<< SIP/2.0 100 Trying
-12:23:46:INFO:>>> SIP/2.0 180 Ringing
-12:23:46:INFO:<<< SIP/2.0 180 Ringing
-12:24:00:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-12:24:00:INFO:destination martin@10.10.28.79
-12:24:01:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-12:24:01:INFO:>>> SIP/2.0 100 Trying
-12:24:01:INFO:<<< SIP/2.0 100 Trying
-12:24:01:INFO:>>> SIP/2.0 180 Ringing
-12:24:01:INFO:<<< SIP/2.0 180 Ringing
-12:24:03:INFO:>>> SIP/2.0 200 Ok
-12:24:03:INFO:<<< SIP/2.0 200 Ok
-12:24:03:INFO:>>> ACK sip:ja@10.10.39.85:34461;transport=udp SIP/2.0
-12:24:03:INFO:destination martin@10.10.28.79
-12:24:03:INFO:<<< ACK sip:ja@10.10.39.85:34461;transport=udp SIP/2.0
-12:24:04:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=syGpU;transport=udp SIP/2.0
-12:24:04:INFO:<<< SIP/2.0 200 Vporiadku
-12:24:17:INFO:>>> INVITE sip:ja@10.10.28.79 SIP/2.0
-12:24:17:INFO:destination ja@10.10.28.79
-12:24:17:INFO:<<< INVITE sip:ja@10.10.28.79 SIP/2.0
-12:24:17:INFO:>>> SIP/2.0 100 Trying
-12:24:17:INFO:<<< SIP/2.0 100 Trying
-12:24:17:INFO:>>> SIP/2.0 486 Busy here
-12:24:17:INFO:<<< SIP/2.0 486 Busy here
-12:24:17:INFO:>>> ACK sip:ja@10.10.28.79 SIP/2.0
-12:24:17:INFO:destination ja@10.10.28.79
-12:24:17:INFO:<<< ACK sip:ja@10.10.28.79 SIP/2.0
-12:24:28:INFO:>>> BYE sip:mraff@10.10.28.79:53988;conf-id=syGpU;transport=udp SIP/2.0
-12:24:28:INFO:destination mraff@10.10.28.79
-12:24:28:INFO:<<< BYE sip:mraff@10.10.28.79:53988;conf-id=syGpU;transport=udp SIP/2.0
-12:24:28:INFO:>>> SIP/2.0 200 Ok
-12:24:28:INFO:<<< SIP/2.0 200 Ok
-12:24:28:INFO:>>> SUBSCRIBE sip:martin@10.10.39.85:34461;transport=udp SIP/2.0
-12:24:28:INFO:<<< SIP/2.0 200 Vporiadku
-12:24:34:INFO:>>> SIP/2.0 603 Decline
-12:24:34:INFO:<<< SIP/2.0 603 Decline
-12:24:34:INFO:>>> ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:24:34:INFO:destination mraff2@10.10.28.79
-12:24:34:INFO:<<< ACK sip:mraff2@10.10.28.79 SIP/2.0
-12:28:53:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:28:53:INFO:destination mraff@10.10.28.79
-12:28:53:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-12:28:53:INFO:>>> SIP/2.0 100 Trying
-12:28:53:INFO:<<< SIP/2.0 100 Trying
-12:28:54:INFO:>>> SIP/2.0 180 Ringing
-12:28:54:INFO:<<< SIP/2.0 180 Ringing
-12:29:03:INFO:>>> SIP/2.0 603 Decline
-12:29:03:INFO:<<< SIP/2.0 603 Decline
-12:29:03:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-12:29:03:INFO:destination mraff@10.10.28.79
-12:29:03:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-12:31:09:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:31:09:INFO:<<< SIP/2.0 200 Vporiadku
-12:31:09:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:31:09:INFO:<<< SIP/2.0 200 Vporiadku
-12:31:09:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:31:09:INFO:<<< SIP/2.0 200 Vporiadku
-12:32:35:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:32:35:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53988
-12:32:35:INFO:<<< SIP/2.0 200 Vporiadku
-12:32:36:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-12:32:36:INFO:<<< SIP/2.0 200 Vporiadku
-12:41:35:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-12:41:35:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53988
-12:41:35:INFO:<<< SIP/2.0 200 Vporiadku
-12:41:36:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-12:41:36:INFO:<<< SIP/2.0 200 Vporiadku
-13:01:02:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 13:01:02 
-13:01:02:INFO:LAPTOP-K5R9Q7M8
-13:01:02:INFO:10.10.28.79
-13:01:05:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:01:05:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53526
-13:01:05:INFO:<<< SIP/2.0 200 Vporiadku
-13:01:06:INFO:>>> PUBLISH sip:mraff2@10.10.28.79 SIP/2.0
-13:01:06:INFO:<<< SIP/2.0 200 Vporiadku
-13:01:11:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:01:11:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53526
-13:01:11:INFO:<<< SIP/2.0 200 Vporiadku
-13:01:11:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:01:11:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53526
-13:01:11:INFO:<<< SIP/2.0 200 Vporiadku
-13:01:11:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-13:01:11:INFO:<<< SIP/2.0 200 Vporiadku
-13:01:42:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:01:42:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53526
-13:01:42:INFO:<<< SIP/2.0 200 Vporiadku
-13:01:42:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:01:42:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:53526
-13:01:42:INFO:<<< SIP/2.0 200 Vporiadku
-13:02:17:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:02:17:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:57016
-13:02:17:INFO:<<< SIP/2.0 200 Vporiadku
-13:02:17:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:02:17:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:57016
-13:02:17:INFO:<<< SIP/2.0 200 Vporiadku
-13:02:17:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:02:17:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:57016
-13:02:17:INFO:<<< SIP/2.0 200 Vporiadku
-13:02:58:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:02:58:INFO:destination mraff@10.10.28.79
-13:02:58:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:02:58:INFO:>>> SIP/2.0 100 Trying
-13:02:58:INFO:<<< SIP/2.0 100 Trying
-13:02:58:INFO:>>> SIP/2.0 180 Ringing
-13:02:58:INFO:<<< SIP/2.0 180 Ringing
-13:03:08:INFO:>>> SIP/2.0 603 Decline
-13:03:08:INFO:<<< SIP/2.0 603 Decline
-13:03:08:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-13:03:08:INFO:destination mraff@10.10.28.79
-13:03:08:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-13:08:18:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 13:08:18 
-13:08:18:INFO:LAPTOP-K5R9Q7M8
-13:08:18:INFO:10.10.28.79
-13:08:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:08:20:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:57016
-13:08:20:INFO:<<< SIP/2.0 200 Vporiadku
-13:08:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:08:20:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:57016
-13:08:20:INFO:<<< SIP/2.0 200 Vporiadku
-13:08:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:08:20:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:57016
-13:08:20:INFO:<<< SIP/2.0 200 Vporiadku
-13:08:21:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:08:21:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:58834
-13:08:21:INFO:<<< SIP/2.0 200 Vporiadku
-13:08:21:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:08:21:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:58834
-13:08:21:INFO:<<< SIP/2.0 200 Vporiadku
-13:08:21:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-13:08:21:INFO:<<< SIP/2.0 200 Vporiadku
-13:08:21:INFO:>>> PUBLISH sip:mraff2@10.10.28.79 SIP/2.0
-13:08:21:INFO:<<< SIP/2.0 200 Vporiadku
-13:08:50:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:08:50:INFO:destination mraff@10.10.28.79
-13:08:50:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:08:50:INFO:>>> SIP/2.0 100 Trying
-13:08:50:INFO:<<< SIP/2.0 100 Trying
-13:08:50:INFO:>>> SIP/2.0 180 Ringing
-13:08:50:INFO:<<< SIP/2.0 180 Ringing
-13:08:55:INFO:>>> SIP/2.0 200 Ok
-13:08:55:INFO:<<< SIP/2.0 200 Ok
-13:08:56:INFO:>>> SIP/2.0 200 Ok
-13:08:56:INFO:<<< SIP/2.0 200 Ok
-13:08:56:INFO:>>> ACK sip:mraff@10.10.28.79:58834;transport=udp SIP/2.0
-13:08:56:INFO:destination mraff@10.10.28.79
-13:08:56:INFO:<<< ACK sip:mraff@10.10.28.79:58834;transport=udp SIP/2.0
-13:08:56:INFO:>>> ACK sip:mraff@10.10.28.79:58834;transport=udp SIP/2.0
-13:08:56:INFO:destination mraff@10.10.28.79
-13:08:56:INFO:<<< ACK sip:mraff@10.10.28.79:58834;transport=udp SIP/2.0
-13:09:01:INFO:>>> BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:09:01:INFO:destination ja@10.10.28.79
-13:09:01:INFO:<<< BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:09:01:INFO:>>> BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:09:01:INFO:destination ja@10.10.28.79
-13:09:01:INFO:<<< BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:09:02:INFO:>>> SIP/2.0 200 Ok
-13:09:02:INFO:<<< SIP/2.0 200 Ok
-13:09:02:INFO:>>> SIP/2.0 200 Ok
-13:09:02:INFO:<<< SIP/2.0 200 Ok
-13:09:09:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:09:09:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:58834
-13:09:09:INFO:<<< SIP/2.0 200 Vporiadku
-13:09:09:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:09:09:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:58834
-13:09:09:INFO:<<< SIP/2.0 200 Vporiadku
-13:09:31:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:09:31:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:58834
-13:09:31:INFO:<<< SIP/2.0 200 Vporiadku
-13:09:31:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:09:31:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:58834
-13:09:31:INFO:<<< SIP/2.0 200 Vporiadku
-13:09:42:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:09:42:INFO:<<< SIP/2.0 200 Vporiadku
-13:09:42:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:09:42:INFO:From: mraff2@10.10.28.79 - Contact: 10.10.28.79:58834
-13:09:42:INFO:<<< SIP/2.0 200 Vporiadku
-13:10:15:INFO:>>> PUBLISH sip:mraff2@10.10.28.79 SIP/2.0
-13:10:15:INFO:<<< SIP/2.0 200 Vporiadku
-13:21:26:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 13:21:26 
-13:21:26:INFO:LAPTOP-K5R9Q7M8
-13:21:26:INFO:10.10.28.79
-13:21:29:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:21:29:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:57016
-13:21:29:INFO:<<< SIP/2.0 200 Vporiadku
-13:21:29:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:21:29:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:59216
-13:21:29:INFO:<<< SIP/2.0 200 Vporiadku
-13:21:29:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-13:21:29:INFO:<<< SIP/2.0 200 Vporiadku
-13:21:40:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:21:40:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:57016
-13:21:40:INFO:<<< SIP/2.0 200 Vporiadku
-13:21:45:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:21:45:INFO:destination mraff@10.10.28.79
-13:21:45:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:21:45:INFO:>>> SIP/2.0 100 Trying
-13:21:45:INFO:<<< SIP/2.0 100 Skusam
-13:21:45:INFO:>>> SIP/2.0 180 Ringing
-13:21:45:INFO:<<< SIP/2.0 180 Zvonim
-13:21:46:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:21:46:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:57016
-13:21:46:INFO:<<< SIP/2.0 200 Vporiadku
-13:21:52:INFO:>>> SIP/2.0 603 Decline
-13:21:52:INFO:<<< SIP/2.0 603 Decline
-13:21:52:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-13:21:52:INFO:destination mraff@10.10.28.79
-13:21:52:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-13:22:18:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:22:18:INFO:destination mraff@10.10.28.79
-13:22:18:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:22:18:INFO:>>> SIP/2.0 100 Trying
-13:22:18:INFO:<<< SIP/2.0 100 Skusam
-13:22:19:INFO:>>> SIP/2.0 180 Ringing
-13:22:19:INFO:<<< SIP/2.0 180 Zvonim
-13:22:20:INFO:>>> SIP/2.0 200 Ok
-13:22:20:INFO:<<< SIP/2.0 200 Skusam
-13:22:20:INFO:>>> ACK sip:mraff@10.10.28.79:59216;transport=udp SIP/2.0
-13:22:20:INFO:destination mraff@10.10.28.79
-13:22:20:INFO:<<< ACK sip:mraff@10.10.28.79:59216;transport=udp SIP/2.0
-13:22:24:INFO:>>> BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:22:24:INFO:destination ja@10.10.28.79
-13:22:24:INFO:<<< BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:22:24:INFO:>>> SIP/2.0 200 Ok
-13:22:24:INFO:<<< SIP/2.0 200 Skusam
-13:31:05:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 13:31:05 
-13:31:05:INFO:LAPTOP-K5R9Q7M8
-13:31:05:INFO:10.10.28.79
-13:31:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:31:07:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:63893
-13:31:07:INFO:<<< SIP/2.0 200 Vporiadku
-13:31:07:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-13:31:07:INFO:<<< SIP/2.0 200 Vporiadku
-13:31:22:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:31:22:INFO:<<< SIP/2.0 400 Zlá požiadavka
-13:31:22:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-13:31:22:INFO:destination mraff@10.10.28.79
-13:31:22:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-13:31:22:INFO:>>> SIP/2.0 405 Method not allowed
-13:31:40:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 13:31:40 
-13:31:40:INFO:LAPTOP-K5R9Q7M8
-13:31:40:INFO:10.10.28.79
-13:31:43:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:31:43:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:57016
-13:31:43:INFO:<<< SIP/2.0 200 Vporiadku
-13:31:43:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:31:43:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:57016
-13:31:43:INFO:<<< SIP/2.0 200 Vporiadku
-13:31:43:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:31:43:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:63893
-13:31:43:INFO:<<< SIP/2.0 200 Vporiadku
-13:31:44:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:31:44:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:57016
-13:31:44:INFO:<<< SIP/2.0 200 Vporiadku
-13:31:55:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:31:55:INFO:destination mraff@10.10.28.79
-13:31:55:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:31:55:INFO:>>> SIP/2.0 100 Skusam
-13:31:55:INFO:<<< SIP/2.0 100 Skusam
-13:31:55:INFO:>>> SIP/2.0 180 Zvonim
-13:31:55:INFO:<<< SIP/2.0 180 Zvonim
-13:32:01:INFO:>>> SIP/2.0 200 Vporiadku
-13:32:01:INFO:<<< SIP/2.0 200 Vporiadku
-13:32:01:INFO:>>> ACK sip:mraff@10.10.28.79:63893;transport=udp SIP/2.0
-13:32:01:INFO:destination mraff@10.10.28.79
-13:32:01:INFO:<<< ACK sip:mraff@10.10.28.79:63893;transport=udp SIP/2.0
-13:32:22:INFO:>>> BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:32:22:INFO:destination ja@10.10.28.79
-13:32:22:INFO:<<< BYE sip:ja@10.10.39.85:57016;transport=udp SIP/2.0
-13:32:22:INFO:>>> SIP/2.0 200 Vporiadku
-13:32:22:INFO:<<< SIP/2.0 200 Vporiadku
-13:43:29:INFO: SIP bol spusteny na - Thu, 24 Feb 2022 13:43:29 
-13:43:29:INFO:LAPTOP-K5R9Q7M8
-13:43:29:INFO:10.10.28.79
-13:43:31:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:43:31:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:52774
-13:43:31:INFO:<<< SIP/2.0 200 Vporiadku
-13:43:31:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-13:43:31:INFO:<<< SIP/2.0 200 Vporiadku
-13:43:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:43:49:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:49681
-13:43:49:INFO:<<< SIP/2.0 200 Vporiadku
-13:43:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:43:49:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:49681
-13:43:49:INFO:<<< SIP/2.0 200 Vporiadku
-13:43:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:43:49:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:49681
-13:43:49:INFO:<<< SIP/2.0 200 Vporiadku
-13:43:59:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:43:59:INFO:destination mraff@10.10.28.79
-13:43:59:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-13:43:59:INFO:>>> SIP/2.0 100 Skusam
-13:43:59:INFO:<<< SIP/2.0 100 Skusam
-13:43:59:INFO:>>> SIP/2.0 180 Zvonim
-13:43:59:INFO:<<< SIP/2.0 180 Zvonim
-13:44:05:INFO:>>> SIP/2.0 200 Vporiadku
-13:44:05:INFO:<<< SIP/2.0 200 Vporiadku
-13:44:05:INFO:>>> SIP/2.0 200 Vporiadku
-13:44:05:INFO:<<< SIP/2.0 200 Vporiadku
-13:44:05:INFO:>>> ACK sip:mraff@10.10.28.79:52774;transport=udp SIP/2.0
-13:44:05:INFO:destination mraff@10.10.28.79
-13:44:05:INFO:<<< ACK sip:mraff@10.10.28.79:52774;transport=udp SIP/2.0
-13:44:05:INFO:>>> ACK sip:mraff@10.10.28.79:52774;transport=udp SIP/2.0
-13:44:05:INFO:destination mraff@10.10.28.79
-13:44:05:INFO:<<< ACK sip:mraff@10.10.28.79:52774;transport=udp SIP/2.0
-13:44:17:INFO:>>> BYE sip:mraff@10.10.28.79:52774;transport=udp SIP/2.0
-13:44:17:INFO:destination mraff@10.10.28.79
-13:44:17:INFO:<<< BYE sip:mraff@10.10.28.79:52774;transport=udp SIP/2.0
-13:44:17:INFO:>>> SIP/2.0 200 Vporiadku
-13:44:17:INFO:<<< SIP/2.0 200 Vporiadku
-13:52:31:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-13:52:31:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:52774
-13:52:31:INFO:<<< SIP/2.0 200 Vporiadku
-13:52:32:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-13:52:32:INFO:<<< SIP/2.0 200 Vporiadku
-13:54:28:INFO:>>> INVITE sip:mobil@10.10.28.79 SIP/2.0
-13:54:28:INFO:destination mobil@10.10.28.79
-13:54:28:INFO:<<< INVITE sip:mobil@10.10.28.79 SIP/2.0
-13:54:28:INFO:>>> SIP/2.0 100 Skusam
-13:54:28:INFO:<<< SIP/2.0 100 Skusam
-13:54:29:INFO:>>> SIP/2.0 180 Zvonim
-13:54:29:INFO:<<< SIP/2.0 180 Zvonim
-13:54:35:INFO:>>> SIP/2.0 603 Zrusene
-13:54:35:INFO:<<< SIP/2.0 603 Zrusene
-13:54:35:INFO:>>> ACK sip:mobil@10.10.28.79 SIP/2.0
-13:54:35:INFO:destination mobil@10.10.28.79
-13:54:35:INFO:<<< ACK sip:mobil@10.10.28.79 SIP/2.0
-18:02:06:INFO: SIP bol spusteny na - Fri, 25 Feb 2022 18:02:06 
-18:02:06:INFO:LAPTOP-K5R9Q7M8
-18:02:06:INFO:10.10.28.79
-18:02:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:02:08:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:59381
-18:02:08:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:08:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-18:02:08:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:02:20:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:35862
-18:02:20:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:02:20:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:35862
-18:02:20:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:02:20:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:35862
-18:02:20:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:39:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-18:02:39:INFO:destination martin@10.10.28.79
-18:02:39:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-18:02:39:INFO:>>> SIP/2.0 100 Skusam
-18:02:39:INFO:<<< SIP/2.0 100 Skusam
-18:02:39:INFO:>>> SIP/2.0 180 Zvonim
-18:02:39:INFO:<<< SIP/2.0 180 Zvonim
-18:02:43:INFO:>>> SIP/2.0 200 Vporiadku
-18:02:43:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:43:INFO:>>> SIP/2.0 200 Vporiadku
-18:02:43:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:43:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:43:INFO:destination martin@10.10.28.79
-18:02:43:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:43:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:43:INFO:destination martin@10.10.28.79
-18:02:43:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:45:INFO:>>> INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:45:INFO:destination martin@10.10.28.79
-18:02:45:INFO:<<< INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:45:INFO:>>> SIP/2.0 100 Skusam
-18:02:45:INFO:<<< SIP/2.0 100 Skusam
-18:02:47:INFO:>>> SIP/2.0 200 Vporiadku
-18:02:47:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:47:INFO:>>> SIP/2.0 200 Vporiadku
-18:02:47:INFO:<<< SIP/2.0 200 Vporiadku
-18:02:47:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:47:INFO:destination martin@10.10.28.79
-18:02:47:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:47:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:02:47:INFO:destination martin@10.10.28.79
-18:02:47:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:03:22:INFO:>>> BYE sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:03:22:INFO:destination mraff@10.10.28.79
-18:03:22:INFO:<<< BYE sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:03:22:INFO:>>> SIP/2.0 200 Vporiadku
-18:03:22:INFO:<<< SIP/2.0 200 Vporiadku
-18:05:25:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:05:25:INFO:destination mraff@10.10.28.79
-18:05:25:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:05:25:INFO:>>> SIP/2.0 100 Skusam
-18:05:25:INFO:<<< SIP/2.0 100 Skusam
-18:05:26:INFO:>>> SIP/2.0 180 Zvonim
-18:05:26:INFO:<<< SIP/2.0 180 Zvonim
-18:05:31:INFO:>>> SIP/2.0 603 Zrusene
-18:05:31:INFO:<<< SIP/2.0 603 Zrusene
-18:05:31:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-18:05:31:INFO:destination mraff@10.10.28.79
-18:05:31:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-18:05:38:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:05:38:INFO:destination mraff@10.10.28.79
-18:05:38:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:05:38:INFO:>>> SIP/2.0 100 Skusam
-18:05:38:INFO:<<< SIP/2.0 100 Skusam
-18:05:39:INFO:>>> SIP/2.0 180 Zvonim
-18:05:39:INFO:<<< SIP/2.0 180 Zvonim
-18:05:41:INFO:>>> SIP/2.0 200 Vporiadku
-18:05:41:INFO:<<< SIP/2.0 200 Vporiadku
-18:05:41:INFO:>>> SIP/2.0 200 Vporiadku
-18:05:41:INFO:<<< SIP/2.0 200 Vporiadku
-18:05:42:INFO:>>> ACK sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:05:42:INFO:destination mraff@10.10.28.79
-18:05:42:INFO:<<< ACK sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:05:42:INFO:>>> ACK sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:05:42:INFO:destination mraff@10.10.28.79
-18:05:42:INFO:<<< ACK sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:05:52:INFO:>>> BYE sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:05:52:INFO:destination mraff@10.10.28.79
-18:05:52:INFO:<<< BYE sip:mraff@10.10.28.79:59381;transport=udp SIP/2.0
-18:05:52:INFO:>>> SIP/2.0 200 Vporiadku
-18:05:52:INFO:<<< SIP/2.0 200 Vporiadku
-18:07:42:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:07:42:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:59381
-18:07:42:INFO:<<< SIP/2.0 200 Vporiadku
-18:08:40:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-18:08:40:INFO:destination martin@10.10.28.79
-18:08:40:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-18:08:41:INFO:>>> SIP/2.0 100 Skusam
-18:08:41:INFO:<<< SIP/2.0 100 Skusam
-18:08:41:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:08:41:INFO:destination mraff@10.10.28.79
-18:08:41:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:08:41:INFO:>>> SIP/2.0 180 Zvonim
-18:08:41:INFO:<<< SIP/2.0 180 Zvonim
-18:08:41:INFO:>>> SIP/2.0 100 Skusam
-18:08:41:INFO:<<< SIP/2.0 100 Skusam
-18:08:41:INFO:>>> SIP/2.0 180 Zvonim
-18:08:41:INFO:<<< SIP/2.0 180 Zvonim
-18:08:41:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:08:41:INFO:destination mraff@10.10.28.79
-18:08:41:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:08:48:INFO:>>> SIP/2.0 200 Vporiadku
-18:08:48:INFO:<<< SIP/2.0 200 Vporiadku
-18:08:49:INFO:>>> SUBSCRIBE sip:pc@10.10.28.79;conf-id=hEeo6;transport=udp SIP/2.0
-18:08:49:INFO:<<< SIP/2.0 200 Vporiadku
-18:08:49:INFO:>>> SIP/2.0 200 Vporiadku
-18:08:49:INFO:<<< SIP/2.0 200 Vporiadku
-18:08:49:INFO:>>> SIP/2.0 200 Vporiadku
-18:08:49:INFO:<<< SIP/2.0 200 Vporiadku
-18:08:51:INFO:>>> SIP/2.0 200 Vporiadku
-18:08:51:INFO:<<< SIP/2.0 200 Vporiadku
-18:08:55:INFO:>>> SIP/2.0 200 Vporiadku
-18:08:55:INFO:<<< SIP/2.0 200 Vporiadku
-18:08:59:INFO:>>> SIP/2.0 200 Vporiadku
-18:08:59:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:03:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:03:INFO:destination pc@10.10.28.79
-18:09:03:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:03:INFO:>>> SUBSCRIBE sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:09:03:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:03:INFO:>>> SIP/2.0 200 Vporiadku
-18:09:03:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:03:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:03:INFO:destination pc@10.10.28.79
-18:09:03:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:04:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:04:INFO:destination pc@10.10.28.79
-18:09:04:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:06:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:06:INFO:destination pc@10.10.28.79
-18:09:06:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:07:INFO:>>> SIP/2.0 200 Vporiadku
-18:09:07:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:09:08:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:35862
-18:09:08:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:09:08:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:35862
-18:09:08:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:09:08:INFO:From: ja@10.10.28.79 - Contact: 10.10.39.85:35862
-18:09:08:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:10:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:10:INFO:destination pc@10.10.28.79
-18:09:10:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:11:INFO:>>> SIP/2.0 200 Vporiadku
-18:09:11:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:14:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:14:INFO:destination pc@10.10.28.79
-18:09:14:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:15:INFO:>>> SIP/2.0 200 Vporiadku
-18:09:15:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:18:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:18:INFO:destination pc@10.10.28.79
-18:09:18:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:19:INFO:>>> SIP/2.0 200 Vporiadku
-18:09:19:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:20:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:20:INFO:destination pc@10.10.28.79
-18:09:20:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:20:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:20:INFO:destination pc@10.10.28.79
-18:09:20:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:21:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:21:INFO:destination pc@10.10.28.79
-18:09:21:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:22:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:22:INFO:destination pc@10.10.28.79
-18:09:22:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:23:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:23:INFO:destination pc@10.10.28.79
-18:09:23:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:26:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:26:INFO:destination pc@10.10.28.79
-18:09:26:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:27:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:27:INFO:destination pc@10.10.28.79
-18:09:27:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:30:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:30:INFO:destination pc@10.10.28.79
-18:09:30:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:31:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:31:INFO:destination pc@10.10.28.79
-18:09:31:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:34:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:34:INFO:destination pc@10.10.28.79
-18:09:34:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:35:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:35:INFO:destination pc@10.10.28.79
-18:09:35:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:39:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:39:INFO:destination pc@10.10.28.79
-18:09:39:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:43:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:43:INFO:destination pc@10.10.28.79
-18:09:43:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:46:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:09:46:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:63332
-18:09:46:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:46:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:09:46:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:63332
-18:09:46:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:46:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-18:09:46:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:47:INFO:>>> BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:47:INFO:destination pc@10.10.28.79
-18:09:47:INFO:<<< BYE sip:pc@10.10.28.79:59381;conf-id=hEeo6;transport=udp SIP/2.0
-18:09:47:INFO:>>> SIP/2.0 481 Call/transaction does not exist
-18:09:47:INFO:<<< SIP/2.0 481 Call/transaction does not exist
-18:09:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:09:49:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:63332
-18:09:49:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:49:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:09:49:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:63332
-18:09:49:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:52:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-18:09:52:INFO:<<< SIP/2.0 200 Vporiadku
-18:09:52:INFO:>>> PUBLISH sip:pc@10.10.28.79 SIP/2.0
-18:09:52:INFO:<<< SIP/2.0 200 Vporiadku
-18:12:21:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:12:21:INFO:destination mraff@10.10.28.79
-18:12:21:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:12:21:INFO:>>> SIP/2.0 100 Skusam
-18:12:21:INFO:<<< SIP/2.0 100 Skusam
-18:12:22:INFO:>>> SIP/2.0 180 Zvonim
-18:12:22:INFO:<<< SIP/2.0 180 Zvonim
-18:12:35:INFO:>>> SIP/2.0 603 Zrusene
-18:12:35:INFO:<<< SIP/2.0 603 Zrusene
-18:12:36:INFO:>>> ACK sip:mraff@10.10.28.79 SIP/2.0
-18:12:36:INFO:destination mraff@10.10.28.79
-18:12:36:INFO:<<< ACK sip:mraff@10.10.28.79 SIP/2.0
-18:12:55:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:12:55:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:63332
-18:12:55:INFO:<<< SIP/2.0 200 Vporiadku
-18:12:55:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:12:55:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:63332
-18:12:55:INFO:<<< SIP/2.0 200 Vporiadku
-18:13:14:INFO:>>> INVITE sip:ja@10.10.28.79 SIP/2.0
-18:13:14:INFO:destination ja@10.10.28.79
-18:13:14:INFO:<<< INVITE sip:ja@10.10.28.79 SIP/2.0
-18:13:14:INFO:>>> SIP/2.0 100 Skusam
-18:13:14:INFO:<<< SIP/2.0 100 Skusam
-18:13:14:INFO:>>> SIP/2.0 180 Zvonim
-18:13:14:INFO:<<< SIP/2.0 180 Zvonim
-18:13:17:INFO:>>> SIP/2.0 200 Vporiadku
-18:13:17:INFO:<<< SIP/2.0 200 Vporiadku
-18:13:17:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:13:17:INFO:destination ja@10.10.28.79
-18:13:17:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:13:22:INFO:>>> BYE sip:mraff@10.10.28.79:63332;transport=udp SIP/2.0
-18:13:22:INFO:destination mraff@10.10.28.79
-18:13:22:INFO:<<< BYE sip:mraff@10.10.28.79:63332;transport=udp SIP/2.0
-18:13:22:INFO:>>> SIP/2.0 200 Vporiadku
-18:13:22:INFO:<<< SIP/2.0 200 Vporiadku
-18:13:57:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:13:57:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53278
-18:13:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:13:57:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:13:57:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:53278
-18:13:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:13:57:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-18:13:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:13:57:INFO:>>> PUBLISH sip:pc@10.10.28.79 SIP/2.0
-18:13:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:19:16:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-18:19:16:INFO:destination martin@10.10.28.79
-18:19:16:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-18:19:16:INFO:>>> SIP/2.0 100 Skusam
-18:19:16:INFO:<<< SIP/2.0 100 Skusam
-18:19:16:INFO:>>> SIP/2.0 180 Zvonim
-18:19:16:INFO:<<< SIP/2.0 180 Zvonim
-18:19:19:INFO:>>> SIP/2.0 200 Vporiadku
-18:19:19:INFO:<<< SIP/2.0 200 Vporiadku
-18:19:19:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:19:19:INFO:destination martin@10.10.28.79
-18:19:19:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:19:50:INFO:>>> BYE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:19:50:INFO:destination martin@10.10.28.79
-18:19:50:INFO:<<< BYE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:19:50:INFO:>>> SIP/2.0 200 Vporiadku
-18:19:50:INFO:<<< SIP/2.0 200 Vporiadku
-18:20:06:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:20:06:INFO:destination mraff@10.10.28.79
-18:20:06:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:20:06:INFO:>>> SIP/2.0 100 Skusam
-18:20:06:INFO:<<< SIP/2.0 100 Skusam
-18:20:07:INFO:>>> SIP/2.0 180 Zvonim
-18:20:07:INFO:<<< SIP/2.0 180 Zvonim
-18:20:10:INFO:>>> SIP/2.0 200 Vporiadku
-18:20:10:INFO:<<< SIP/2.0 200 Vporiadku
-18:20:11:INFO:>>> ACK sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:20:11:INFO:destination mraff@10.10.28.79
-18:20:11:INFO:<<< ACK sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:20:26:INFO:>>> REFER sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:20:26:INFO:destination mraff@10.10.28.79
-18:20:26:INFO:<<< REFER sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:20:26:INFO:>>> SIP/2.0 202 Akceptovane
-18:20:26:INFO:<<< SIP/2.0 202 Akceptovane
-18:20:26:INFO:>>> INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:26:INFO:destination ja@10.10.28.79
-18:20:26:INFO:<<< INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:26:INFO:>>> SIP/2.0 100 Skusam
-18:20:26:INFO:<<< SIP/2.0 100 Skusam
-18:20:26:INFO:>>> SIP/2.0 200 Vporiadku
-18:20:26:INFO:<<< SIP/2.0 200 Vporiadku
-18:20:26:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:26:INFO:destination ja@10.10.28.79
-18:20:26:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:26:INFO:>>> NOTIFY sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:26:INFO:<<< SIP/2.0 200 Vporiadku
-18:20:26:INFO:>>> INVITE sip:ja@10.10.28.79 SIP/2.0
-18:20:26:INFO:destination ja@10.10.28.79
-18:20:26:INFO:<<< INVITE sip:ja@10.10.28.79 SIP/2.0
-18:20:26:INFO:>>> SIP/2.0 100 Skusam
-18:20:26:INFO:<<< SIP/2.0 100 Skusam
-18:20:26:INFO:>>> SIP/2.0 486 Busy here
-18:20:26:INFO:<<< SIP/2.0 486 Busy here
-18:20:26:INFO:>>> ACK sip:ja@10.10.28.79 SIP/2.0
-18:20:26:INFO:destination ja@10.10.28.79
-18:20:26:INFO:<<< ACK sip:ja@10.10.28.79 SIP/2.0
-18:20:26:INFO:>>> NOTIFY sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:26:INFO:<<< SIP/2.0 200 Vporiadku
-18:20:26:INFO:>>> INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:26:INFO:destination ja@10.10.28.79
-18:20:26:INFO:<<< INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:27:INFO:>>> SIP/2.0 100 Skusam
-18:20:27:INFO:<<< SIP/2.0 100 Skusam
-18:20:27:INFO:>>> SIP/2.0 200 Vporiadku
-18:20:27:INFO:<<< SIP/2.0 200 Vporiadku
-18:20:27:INFO:>>> SIP/2.0 200 Vporiadku
-18:20:27:INFO:<<< SIP/2.0 200 Vporiadku
-18:20:27:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:27:INFO:destination ja@10.10.28.79
-18:20:27:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:27:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:27:INFO:destination ja@10.10.28.79
-18:20:27:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:20:50:INFO:>>> BYE sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:20:50:INFO:destination mraff@10.10.28.79
-18:20:50:INFO:<<< BYE sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:20:50:INFO:>>> SIP/2.0 200 Vporiadku
-18:20:50:INFO:<<< SIP/2.0 200 Vporiadku
-18:21:43:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:21:43:INFO:destination mraff@10.10.28.79
-18:21:43:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
-18:21:43:INFO:>>> SIP/2.0 100 Skusam
-18:21:43:INFO:<<< SIP/2.0 100 Skusam
-18:21:43:INFO:>>> SIP/2.0 180 Zvonim
-18:21:43:INFO:<<< SIP/2.0 180 Zvonim
-18:21:46:INFO:>>> SIP/2.0 200 Vporiadku
-18:21:46:INFO:<<< SIP/2.0 200 Vporiadku
-18:21:47:INFO:>>> SIP/2.0 200 Vporiadku
-18:21:47:INFO:<<< SIP/2.0 200 Vporiadku
-18:21:47:INFO:>>> ACK sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:21:47:INFO:destination mraff@10.10.28.79
-18:21:47:INFO:<<< ACK sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:21:47:INFO:>>> ACK sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:21:47:INFO:destination mraff@10.10.28.79
-18:21:47:INFO:<<< ACK sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:21:57:INFO:>>> REFER sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:21:57:INFO:destination mraff@10.10.28.79
-18:21:57:INFO:<<< REFER sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:21:57:INFO:>>> SIP/2.0 202 Akceptovane
-18:21:57:INFO:<<< SIP/2.0 202 Akceptovane
-18:21:57:INFO:>>> INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:21:57:INFO:destination ja@10.10.28.79
-18:21:57:INFO:<<< INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:21:57:INFO:>>> SIP/2.0 100 Skusam
-18:21:57:INFO:<<< SIP/2.0 100 Skusam
-18:21:57:INFO:>>> SIP/2.0 200 Vporiadku
-18:21:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:21:57:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:21:57:INFO:destination ja@10.10.28.79
-18:21:57:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:21:57:INFO:>>> NOTIFY sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:21:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:21:57:INFO:>>> INVITE sip:pc@10.10.28.79 SIP/2.0
-18:21:57:INFO:destination pc@10.10.28.79
-18:21:57:INFO:<<< INVITE sip:pc@10.10.28.79 SIP/2.0
-18:21:58:INFO:>>> SIP/2.0 100 Skusam
-18:21:58:INFO:<<< SIP/2.0 100 Skusam
-18:21:58:INFO:>>> SIP/2.0 180 Zvonim
-18:21:58:INFO:<<< SIP/2.0 180 Zvonim
-18:22:23:INFO:>>> SIP/2.0 603 Zrusene
-18:22:23:INFO:<<< SIP/2.0 603 Zrusene
-18:22:23:INFO:>>> ACK sip:pc@10.10.28.79 SIP/2.0
-18:22:23:INFO:destination pc@10.10.28.79
-18:22:23:INFO:<<< ACK sip:pc@10.10.28.79 SIP/2.0
-18:22:23:INFO:>>> NOTIFY sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:22:23:INFO:<<< SIP/2.0 200 Vporiadku
-18:22:24:INFO:>>> INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:22:24:INFO:destination ja@10.10.28.79
-18:22:24:INFO:<<< INVITE sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:22:24:INFO:>>> SIP/2.0 100 Skusam
-18:22:24:INFO:<<< SIP/2.0 100 Skusam
-18:22:24:INFO:>>> SIP/2.0 200 Vporiadku
-18:22:24:INFO:<<< SIP/2.0 200 Vporiadku
-18:22:24:INFO:>>> ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:22:24:INFO:destination ja@10.10.28.79
-18:22:24:INFO:<<< ACK sip:ja@10.10.39.85:35862;transport=udp SIP/2.0
-18:22:57:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:22:57:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:53278
-18:22:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:22:57:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
-18:22:57:INFO:<<< SIP/2.0 200 Vporiadku
-18:23:32:INFO:>>> BYE sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:23:32:INFO:destination mraff@10.10.28.79
-18:23:32:INFO:<<< BYE sip:mraff@10.10.28.79:53278;transport=udp SIP/2.0
-18:23:32:INFO:>>> SIP/2.0 200 Vporiadku
-18:23:32:INFO:<<< SIP/2.0 200 Vporiadku
-18:24:16:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
-18:24:16:INFO:<<< SIP/2.0 200 Vporiadku
-18:25:11:INFO:>>> INVITE sip:pc@10.10.28.79 SIP/2.0
-18:25:11:INFO:destination pc@10.10.28.79
-18:25:11:INFO:<<< INVITE sip:pc@10.10.28.79 SIP/2.0
-18:25:11:INFO:>>> SIP/2.0 100 Skusam
-18:25:11:INFO:<<< SIP/2.0 100 Skusam
-18:25:11:INFO:>>> SIP/2.0 180 Zvonim
-18:25:11:INFO:<<< SIP/2.0 180 Zvonim
-18:25:36:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
-18:25:36:INFO:destination martin@10.10.28.79
-18:25:36:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
-18:25:36:INFO:>>> SIP/2.0 100 Skusam
-18:25:36:INFO:<<< SIP/2.0 100 Skusam
-18:25:37:INFO:>>> SIP/2.0 180 Zvonim
-18:25:37:INFO:<<< SIP/2.0 180 Zvonim
-18:25:39:INFO:>>> SIP/2.0 200 Vporiadku
-18:25:39:INFO:<<< SIP/2.0 200 Vporiadku
-18:25:39:INFO:>>> ACK sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:25:39:INFO:destination martin@10.10.28.79
-18:25:39:INFO:<<< ACK sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:25:39:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=Zt9pc;transport=udp SIP/2.0
-18:25:39:INFO:<<< SIP/2.0 200 Vporiadku
-18:25:41:INFO:>>> INVITE sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:25:41:INFO:destination martin@10.10.28.79
-18:25:41:INFO:<<< INVITE sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:25:41:INFO:>>> SIP/2.0 100 Skusam
-18:25:41:INFO:<<< SIP/2.0 100 Skusam
-18:25:41:INFO:>>> SIP/2.0 200 Vporiadku
-18:25:41:INFO:<<< SIP/2.0 200 Vporiadku
-18:25:41:INFO:>>> ACK sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:25:41:INFO:destination martin@10.10.28.79
-18:25:41:INFO:<<< ACK sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:26:04:INFO:>>> SIP/2.0 603 Zrusene
-18:26:04:INFO:<<< SIP/2.0 603 Zrusene
-18:26:04:INFO:>>> ACK sip:pc@10.10.28.79 SIP/2.0
-18:26:04:INFO:destination pc@10.10.28.79
-18:26:04:INFO:<<< ACK sip:pc@10.10.28.79 SIP/2.0
-18:26:10:INFO:>>> BYE sip:mraff@10.10.28.79:53278;conf-id=Zt9pc;transport=udp SIP/2.0
-18:26:10:INFO:destination mraff@10.10.28.79
-18:26:10:INFO:<<< BYE sip:mraff@10.10.28.79:53278;conf-id=Zt9pc;transport=udp SIP/2.0
-18:26:10:INFO:>>> SIP/2.0 200 Vporiadku
-18:26:10:INFO:<<< SIP/2.0 200 Vporiadku
-18:26:10:INFO:>>> SUBSCRIBE sip:martin@10.10.39.85:35862;transport=udp SIP/2.0
-18:26:10:INFO:<<< SIP/2.0 200 Vporiadku
+21:07:48:INFO: SIP bol spusteny na - Mon, 28 Feb 2022 21:07:48 
+21:07:48:INFO:LAPTOP-K5R9Q7M8
+21:07:48:INFO:10.10.28.79
+21:08:46:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:08:46:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:64420
+21:08:46:INFO:<<< SIP/2.0 200 Vporiadku
+21:08:46:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:08:46:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:64420
+21:08:46:INFO:<<< SIP/2.0 200 Vporiadku
+21:08:47:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
+21:08:47:INFO:<<< SIP/2.0 200 Vporiadku
+21:08:47:INFO:>>> PUBLISH sip:pc@10.10.28.79 SIP/2.0
+21:08:47:INFO:<<< SIP/2.0 200 Vporiadku
+21:09:24:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:09:24:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:46135
+21:09:24:INFO:<<< SIP/2.0 200 Vporiadku
+21:09:24:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:09:24:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:46135
+21:09:24:INFO:<<< SIP/2.0 200 Vporiadku
+21:10:39:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
+21:10:39:INFO:destination martin@10.10.28.79
+21:10:39:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
+21:10:39:INFO:>>> SIP/2.0 100 Skusam
+21:10:39:INFO:<<< SIP/2.0 100 Skusam
+21:10:39:INFO:>>> SIP/2.0 180 Zvonim
+21:10:39:INFO:<<< SIP/2.0 180 Zvonim
+21:10:47:INFO:>>> SIP/2.0 603 Zrusene
+21:10:47:INFO:<<< SIP/2.0 603 Zrusene
+21:10:47:INFO:>>> ACK sip:martin@10.10.28.79 SIP/2.0
+21:10:47:INFO:destination martin@10.10.28.79
+21:10:47:INFO:<<< ACK sip:martin@10.10.28.79 SIP/2.0
+21:11:38:INFO:>>> REGISTER sip:10.10.30.7 SIP/2.0
+21:11:38:INFO:From: roman@10.10.30.7 - Contact: 10.10.30.7:60452
+21:11:38:INFO:<<< SIP/2.0 200 Vporiadku
+21:11:38:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:11:38:INFO:From: roman2@10.10.28.79 - Contact: 10.10.30.7:60452
+21:11:38:INFO:<<< SIP/2.0 200 Vporiadku
+21:12:20:INFO:>>> REGISTER sip:10.10.30.7 SIP/2.0
+21:12:20:INFO:From: roman@10.10.30.7 - Contact: 10.10.30.7:60452
+21:12:20:INFO:<<< SIP/2.0 200 Vporiadku
+21:12:20:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:12:20:INFO:From: roman2@10.10.28.79 - Contact: 10.10.30.7:60452
+21:12:20:INFO:<<< SIP/2.0 200 Vporiadku
+21:12:43:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:12:43:INFO:<<< SIP/2.0 200 Vporiadku
+21:12:43:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:12:43:INFO:From: roman2@10.10.28.79 - Contact: 10.10.30.7:60452
+21:12:43:INFO:<<< SIP/2.0 200 Vporiadku
+21:12:55:INFO:>>> REGISTER sip:10.10.30.7 SIP/2.0
+21:12:55:INFO:From: roman@10.10.30.7 - Contact: 10.10.30.7:60452
+21:12:55:INFO:<<< SIP/2.0 200 Vporiadku
+21:12:55:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:12:55:INFO:From: roman@10.10.28.79 - Contact: 10.10.30.7:60452
+21:12:55:INFO:<<< SIP/2.0 200 Vporiadku
+21:12:55:INFO:>>> PUBLISH sip:roman@10.10.28.79 SIP/2.0
+21:12:55:INFO:<<< SIP/2.0 200 Vporiadku
+21:13:27:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
+21:13:27:INFO:destination martin@10.10.28.79
+21:13:27:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
+21:13:27:INFO:>>> SIP/2.0 100 Skusam
+21:13:27:INFO:<<< SIP/2.0 100 Skusam
+21:13:28:INFO:>>> SIP/2.0 180 Zvonim
+21:13:28:INFO:<<< SIP/2.0 180 Zvonim
+21:13:34:INFO:>>> SIP/2.0 200 Vporiadku
+21:13:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:13:34:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:34:INFO:destination martin@10.10.28.79
+21:13:34:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:36:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=0~q-b;transport=udp SIP/2.0
+21:13:36:INFO:<<< SIP/2.0 200 Vporiadku
+21:13:39:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:39:INFO:destination martin@10.10.28.79
+21:13:39:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:39:INFO:>>> SIP/2.0 100 Skusam
+21:13:39:INFO:<<< SIP/2.0 100 Skusam
+21:13:39:INFO:>>> SIP/2.0 200 Vporiadku
+21:13:39:INFO:<<< SIP/2.0 200 Vporiadku
+21:13:39:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:39:INFO:destination martin@10.10.28.79
+21:13:39:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:57:INFO:>>> BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:57:INFO:destination martin@10.10.28.79
+21:13:57:INFO:<<< BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:57:INFO:>>> SIP/2.0 200 Vporiadku
+21:13:57:INFO:<<< SIP/2.0 200 Vporiadku
+21:13:57:INFO:>>> SUBSCRIBE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:13:57:INFO:<<< SIP/2.0 200 Vporiadku
+21:15:05:INFO: SIP bol spusteny na - Mon, 28 Feb 2022 21:15:05 
+21:15:05:INFO:LAPTOP-K5R9Q7M8
+21:15:05:INFO:10.10.28.79
+21:15:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:15:07:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:46135
+21:15:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:15:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:15:07:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:46135
+21:15:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:15:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:15:07:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:64420
+21:15:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:15:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:15:07:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:64420
+21:15:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:15:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:15:08:INFO:From: roman@10.10.28.79 - Contact: 10.10.30.7:60452
+21:15:08:INFO:<<< SIP/2.0 200 Vporiadku
+21:16:48:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
+21:16:48:INFO:destination martin@10.10.28.79
+21:16:48:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
+21:16:48:INFO:>>> SIP/2.0 100 Skusam
+21:16:48:INFO:<<< SIP/2.0 100 Skusam
+21:16:48:INFO:>>> INVITE sip:roman@10.10.28.79 SIP/2.0
+21:16:48:INFO:destination roman@10.10.28.79
+21:16:48:INFO:<<< INVITE sip:roman@10.10.28.79 SIP/2.0
+21:16:48:INFO:>>> SIP/2.0 100 Skusam
+21:16:48:INFO:<<< SIP/2.0 100 Skusam
+21:16:49:INFO:>>> SIP/2.0 180 Zvonim
+21:16:49:INFO:<<< SIP/2.0 180 Zvonim
+21:16:51:INFO:>>> SIP/2.0 180 Zvonim
+21:16:51:INFO:<<< SIP/2.0 180 Zvonim
+21:16:53:INFO:>>> SIP/2.0 200 Vporiadku
+21:16:53:INFO:<<< SIP/2.0 200 Vporiadku
+21:16:54:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:16:54:INFO:destination martin@10.10.28.79
+21:16:54:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:16:55:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=0~q-b;transport=udp SIP/2.0
+21:16:55:INFO:<<< SIP/2.0 200 Vporiadku
+21:16:56:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:16:56:INFO:destination martin@10.10.28.79
+21:16:56:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:16:56:INFO:>>> SIP/2.0 100 Skusam
+21:16:56:INFO:<<< SIP/2.0 100 Skusam
+21:16:56:INFO:>>> SIP/2.0 200 Vporiadku
+21:16:56:INFO:<<< SIP/2.0 200 Vporiadku
+21:16:56:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:16:56:INFO:destination martin@10.10.28.79
+21:16:56:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:16:57:INFO:>>> SIP/2.0 200 Vporiadku
+21:16:57:INFO:<<< SIP/2.0 200 Vporiadku
+21:16:57:INFO:>>> ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:16:57:INFO:destination roman@10.10.28.79
+21:16:57:INFO:<<< ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:16:57:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=0~q-b;transport=udp SIP/2.0
+21:16:57:INFO:<<< SIP/2.0 200 Vporiadku
+21:16:59:INFO:>>> INVITE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:16:59:INFO:destination roman@10.10.28.79
+21:16:59:INFO:<<< INVITE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:16:59:INFO:>>> SIP/2.0 100 Skusam
+21:16:59:INFO:<<< SIP/2.0 100 Skusam
+21:16:59:INFO:>>> SIP/2.0 200 Vporiadku
+21:16:59:INFO:<<< SIP/2.0 200 Vporiadku
+21:16:59:INFO:>>> ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:16:59:INFO:destination roman@10.10.28.79
+21:16:59:INFO:<<< ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:17:04:INFO:>>> INVITE sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:17:04:INFO:destination mraff@10.10.28.79
+21:17:04:INFO:<<< INVITE sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:17:04:INFO:>>> SIP/2.0 100 Skusam
+21:17:04:INFO:<<< SIP/2.0 100 Skusam
+21:17:06:INFO:>>> BYE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:17:06:INFO:destination roman@10.10.28.79
+21:17:06:INFO:<<< BYE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:17:06:INFO:>>> SIP/2.0 200 Vporiadku
+21:17:06:INFO:<<< SIP/2.0 200 Vporiadku
+21:17:06:INFO:>>> BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:17:06:INFO:destination martin@10.10.28.79
+21:17:06:INFO:<<< BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:17:06:INFO:>>> SUBSCRIBE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:17:06:INFO:<<< SIP/2.0 200 Vporiadku
+21:17:06:INFO:>>> SIP/2.0 200 Vporiadku
+21:17:06:INFO:<<< SIP/2.0 200 Vporiadku
+21:17:06:INFO:>>> SUBSCRIBE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:17:06:INFO:<<< SIP/2.0 200 Vporiadku
+21:17:47:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
+21:17:47:INFO:<<< SIP/2.0 200 Vporiadku
+21:20:29:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:20:29:INFO:From: romanmobil@10.10.28.79 - Contact: 10.10.30.64:45539
+21:20:29:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:12:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:21:12:INFO:From: romanmobil@10.10.28.79 - Contact: 10.10.30.64:45539
+21:21:12:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:16:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
+21:21:16:INFO:destination martin@10.10.28.79
+21:21:16:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
+21:21:16:INFO:>>> INVITE sip:roman@10.10.28.79 SIP/2.0
+21:21:16:INFO:destination roman@10.10.28.79
+21:21:16:INFO:<<< INVITE sip:roman@10.10.28.79 SIP/2.0
+21:21:16:INFO:>>> SIP/2.0 100 Skusam
+21:21:16:INFO:<<< SIP/2.0 100 Skusam
+21:21:16:INFO:>>> INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:21:16:INFO:destination romanmobil@10.10.28.79
+21:21:16:INFO:<<< INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:21:16:INFO:>>> SIP/2.0 100 Skusam
+21:21:16:INFO:<<< SIP/2.0 100 Skusam
+21:21:16:INFO:>>> SIP/2.0 100 Skusam
+21:21:16:INFO:<<< SIP/2.0 100 Skusam
+21:21:16:INFO:>>> SIP/2.0 180 Zvonim
+21:21:16:INFO:<<< SIP/2.0 180 Zvonim
+21:21:16:INFO:>>> SIP/2.0 180 Zvonim
+21:21:16:INFO:<<< SIP/2.0 180 Zvonim
+21:21:17:INFO:>>> SIP/2.0 180 Zvonim
+21:21:17:INFO:<<< SIP/2.0 180 Zvonim
+21:21:20:INFO:>>> SIP/2.0 200 Vporiadku
+21:21:20:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:20:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:21:20:INFO:destination martin@10.10.28.79
+21:21:20:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:21:21:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:21:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:22:INFO:>>> SIP/2.0 200 Vporiadku
+21:21:22:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:23:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:21:23:INFO:destination romanmobil@10.10.28.79
+21:21:23:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:21:23:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:23:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:24:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:21:24:INFO:destination martin@10.10.28.79
+21:21:24:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:21:24:INFO:>>> SIP/2.0 100 Skusam
+21:21:24:INFO:<<< SIP/2.0 100 Skusam
+21:21:24:INFO:>>> SIP/2.0 200 Vporiadku
+21:21:24:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:24:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:21:24:INFO:destination martin@10.10.28.79
+21:21:24:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:21:27:INFO:>>> SIP/2.0 200 Vporiadku
+21:21:27:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:27:INFO:>>> ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:21:27:INFO:destination roman@10.10.28.79
+21:21:27:INFO:<<< ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:21:27:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:27:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:29:INFO:>>> INVITE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:21:29:INFO:destination roman@10.10.28.79
+21:21:29:INFO:<<< INVITE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:21:29:INFO:>>> SIP/2.0 100 Skusam
+21:21:29:INFO:<<< SIP/2.0 100 Skusam
+21:21:29:INFO:>>> SIP/2.0 200 Vporiadku
+21:21:29:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:29:INFO:>>> ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:21:29:INFO:destination roman@10.10.28.79
+21:21:29:INFO:<<< ACK sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:21:29:INFO:>>> SUBSCRIBE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:21:29:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:30:INFO:>>> INVITE sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:30:INFO:destination mraff@10.10.28.79
+21:21:30:INFO:<<< INVITE sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:30:INFO:>>> SUBSCRIBE sip:mraff@10.10.28.79;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:30:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:30:INFO:>>> SIP/2.0 100 Skusam
+21:21:30:INFO:<<< SIP/2.0 100 Skusam
+21:21:46:INFO:>>> INVITE sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:46:INFO:destination mraff@10.10.28.79
+21:21:46:INFO:<<< INVITE sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:21:46:INFO:>>> SIP/2.0 100 Skusam
+21:21:46:INFO:<<< SIP/2.0 100 Skusam
+21:21:53:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:21:53:INFO:destination romanmobil@10.10.28.79
+21:21:53:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:21:53:INFO:>>> SIP/2.0 200 Vporiadku
+21:21:53:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:53:INFO:>>> SUBSCRIBE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:21:53:INFO:<<< SIP/2.0 200 Vporiadku
+21:21:56:INFO:>>> PUBLISH sip:roman@10.10.28.79 SIP/2.0
+21:21:56:INFO:<<< SIP/2.0 200 Vporiadku
+21:22:13:INFO:>>> BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:22:13:INFO:destination martin@10.10.28.79
+21:22:13:INFO:<<< BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:22:13:INFO:>>> SIP/2.0 200 Vporiadku
+21:22:13:INFO:<<< SIP/2.0 200 Vporiadku
+21:22:13:INFO:>>> BYE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:22:13:INFO:destination roman@10.10.28.79
+21:22:13:INFO:<<< BYE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:22:13:INFO:>>> SIP/2.0 200 Vporiadku
+21:22:13:INFO:<<< SIP/2.0 200 Vporiadku
+21:22:13:INFO:>>> SUBSCRIBE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:22:13:INFO:<<< SIP/2.0 200 Vporiadku
+21:22:13:INFO:>>> SUBSCRIBE sip:roman@10.10.30.7:60452;transport=udp SIP/2.0
+21:22:13:INFO:<<< SIP/2.0 200 Vporiadku
+21:24:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:24:07:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:64420
+21:24:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:24:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:24:08:INFO:From: roman@10.10.28.79 - Contact: 10.10.30.7:60452
+21:24:08:INFO:<<< SIP/2.0 200 Vporiadku
+21:25:26:INFO:>>> INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:25:26:INFO:destination romanmobil@10.10.28.79
+21:25:26:INFO:<<< INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:25:26:INFO:>>> SIP/2.0 100 Skusam
+21:25:26:INFO:<<< SIP/2.0 100 Skusam
+21:25:26:INFO:>>> SIP/2.0 180 Zvonim
+21:25:26:INFO:<<< SIP/2.0 180 Zvonim
+21:25:34:INFO:>>> SIP/2.0 200 Vporiadku
+21:25:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:25:34:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:25:34:INFO:destination romanmobil@10.10.28.79
+21:25:34:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:26:05:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:26:05:INFO:destination romanmobil@10.10.28.79
+21:26:05:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:26:05:INFO:>>> SIP/2.0 200 Vporiadku
+21:26:05:INFO:<<< SIP/2.0 200 Vporiadku
+21:26:47:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
+21:26:47:INFO:<<< SIP/2.0 200 Vporiadku
+21:27:00:INFO:>>> INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:27:00:INFO:destination romanmobil@10.10.28.79
+21:27:00:INFO:<<< INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:27:00:INFO:>>> SIP/2.0 100 Skusam
+21:27:00:INFO:<<< SIP/2.0 100 Skusam
+21:27:01:INFO:>>> SIP/2.0 180 Zvonim
+21:27:01:INFO:<<< SIP/2.0 180 Zvonim
+21:27:12:INFO:>>> SIP/2.0 200 Vporiadku
+21:27:12:INFO:<<< SIP/2.0 200 Vporiadku
+21:27:13:INFO:>>> SIP/2.0 200 Vporiadku
+21:27:13:INFO:<<< SIP/2.0 200 Vporiadku
+21:27:13:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:27:13:INFO:destination romanmobil@10.10.28.79
+21:27:13:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:27:13:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:27:13:INFO:destination romanmobil@10.10.28.79
+21:27:13:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:27:26:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:27:26:INFO:destination martin@10.10.28.79
+21:27:26:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:27:26:INFO:>>> SIP/2.0 100 Skusam
+21:27:26:INFO:<<< SIP/2.0 100 Skusam
+21:27:28:INFO:>>> SIP/2.0 200 Vporiadku
+21:27:28:INFO:<<< SIP/2.0 200 Vporiadku
+21:27:28:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:27:28:INFO:destination martin@10.10.28.79
+21:27:28:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:28:33:INFO:>>> REFER sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:28:33:INFO:destination romanmobil@10.10.28.79
+21:28:33:INFO:<<< REFER sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:28:33:INFO:>>> SIP/2.0 202 Akceptovane
+21:28:33:INFO:<<< SIP/2.0 202 Akceptovane
+21:28:33:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:28:33:INFO:destination martin@10.10.28.79
+21:28:33:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:28:33:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
+21:28:33:INFO:destination mraff@10.10.28.79
+21:28:33:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
+21:28:33:INFO:>>> SIP/2.0 100 Skusam
+21:28:33:INFO:<<< SIP/2.0 100 Skusam
+21:28:33:INFO:>>> SIP/2.0 100 Skusam
+21:28:33:INFO:<<< SIP/2.0 100 Skusam
+21:28:34:INFO:>>> SIP/2.0 200 Vporiadku
+21:28:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:28:34:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:28:34:INFO:destination martin@10.10.28.79
+21:28:34:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:28:34:INFO:>>> NOTIFY sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:28:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:28:34:INFO:>>> SIP/2.0 180 Zvonim
+21:28:34:INFO:<<< SIP/2.0 180 Zvonim
+21:28:38:INFO:>>> SIP/2.0 200 Vporiadku
+21:28:38:INFO:<<< SIP/2.0 200 Vporiadku
+21:28:38:INFO:>>> NOTIFY sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:28:38:INFO:<<< SIP/2.0 200 Vporiadku
+21:28:38:INFO:>>> ACK sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:28:38:INFO:destination mraff@10.10.28.79
+21:28:38:INFO:<<< ACK sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:29:34:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:29:34:INFO:destination romanmobil@10.10.28.79
+21:29:34:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:29:34:INFO:>>> SIP/2.0 200 Vporiadku
+21:29:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:29:50:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:29:50:INFO:destination romanmobil@10.10.28.79
+21:29:50:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:29:50:INFO:>>> SIP/2.0 200 Vporiadku
+21:29:50:INFO:<<< SIP/2.0 200 Vporiadku
+21:30:22:INFO:>>> INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:30:22:INFO:destination romanmobil@10.10.28.79
+21:30:22:INFO:<<< INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:30:22:INFO:>>> SIP/2.0 100 Skusam
+21:30:22:INFO:<<< SIP/2.0 100 Skusam
+21:30:22:INFO:>>> SIP/2.0 180 Zvonim
+21:30:22:INFO:<<< SIP/2.0 180 Zvonim
+21:30:26:INFO:>>> SIP/2.0 200 Vporiadku
+21:30:26:INFO:<<< SIP/2.0 200 Vporiadku
+21:30:26:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:30:26:INFO:destination romanmobil@10.10.28.79
+21:30:26:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:30:44:INFO:>>> REFER sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:30:44:INFO:destination romanmobil@10.10.28.79
+21:30:44:INFO:<<< REFER sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:30:44:INFO:>>> SIP/2.0 202 Akceptovane
+21:30:44:INFO:<<< SIP/2.0 202 Akceptovane
+21:30:44:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:30:44:INFO:destination martin@10.10.28.79
+21:30:44:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:30:45:INFO:>>> INVITE sip:mraff@10.10.28.79 SIP/2.0
+21:30:45:INFO:destination mraff@10.10.28.79
+21:30:45:INFO:<<< INVITE sip:mraff@10.10.28.79 SIP/2.0
+21:30:45:INFO:>>> SIP/2.0 100 Skusam
+21:30:45:INFO:<<< SIP/2.0 100 Skusam
+21:30:45:INFO:>>> SIP/2.0 100 Skusam
+21:30:45:INFO:<<< SIP/2.0 100 Skusam
+21:30:45:INFO:>>> SIP/2.0 200 Vporiadku
+21:30:45:INFO:<<< SIP/2.0 200 Vporiadku
+21:30:45:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:30:45:INFO:destination martin@10.10.28.79
+21:30:45:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:30:45:INFO:>>> NOTIFY sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:30:45:INFO:<<< SIP/2.0 200 Vporiadku
+21:30:46:INFO:>>> SIP/2.0 180 Zvonim
+21:30:46:INFO:<<< SIP/2.0 180 Zvonim
+21:30:50:INFO:>>> SIP/2.0 200 Vporiadku
+21:30:50:INFO:<<< SIP/2.0 200 Vporiadku
+21:30:50:INFO:>>> NOTIFY sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:30:50:INFO:<<< SIP/2.0 200 Vporiadku
+21:30:51:INFO:>>> SIP/2.0 200 Vporiadku
+21:30:51:INFO:<<< SIP/2.0 200 Vporiadku
+21:30:51:INFO:>>> ACK sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:30:51:INFO:destination mraff@10.10.28.79
+21:30:51:INFO:<<< ACK sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:30:51:INFO:>>> ACK sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:30:51:INFO:destination mraff@10.10.28.79
+21:30:51:INFO:<<< ACK sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:30:56:INFO:>>> PUBLISH sip:roman@10.10.28.79 SIP/2.0
+21:30:56:INFO:<<< SIP/2.0 200 Vporiadku
+21:31:24:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:31:24:INFO:destination romanmobil@10.10.28.79
+21:31:24:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:31:24:INFO:>>> SIP/2.0 200 Vporiadku
+21:31:24:INFO:<<< SIP/2.0 200 Vporiadku
+21:31:29:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:31:29:INFO:destination romanmobil@10.10.28.79
+21:31:29:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:31:29:INFO:>>> SIP/2.0 200 Vporiadku
+21:31:29:INFO:<<< SIP/2.0 200 Vporiadku
+21:32:26:INFO:>>> INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:32:26:INFO:destination romanmobil@10.10.28.79
+21:32:26:INFO:<<< INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:32:26:INFO:>>> SIP/2.0 100 Skusam
+21:32:26:INFO:<<< SIP/2.0 100 Skusam
+21:32:33:INFO:>>> SIP/2.0 200 Vporiadku
+21:32:33:INFO:<<< SIP/2.0 200 Vporiadku
+21:32:34:INFO:>>> SIP/2.0 200 Vporiadku
+21:32:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:32:34:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:32:34:INFO:destination romanmobil@10.10.28.79
+21:32:34:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:32:34:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:32:34:INFO:destination romanmobil@10.10.28.79
+21:32:34:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:05:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:05:INFO:destination romanmobil@10.10.28.79
+21:33:05:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:05:INFO:>>> SIP/2.0 200 Vporiadku
+21:33:05:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:33:07:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:64420
+21:33:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:33:08:INFO:From: roman@10.10.28.79 - Contact: 10.10.30.7:60452
+21:33:08:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:34:INFO:>>> INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:33:34:INFO:destination romanmobil@10.10.28.79
+21:33:34:INFO:<<< INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:33:35:INFO:>>> SIP/2.0 100 Skusam
+21:33:35:INFO:<<< SIP/2.0 100 Skusam
+21:33:35:INFO:>>> SIP/2.0 180 Zvonim
+21:33:35:INFO:<<< SIP/2.0 180 Zvonim
+21:33:37:INFO:>>> SIP/2.0 200 Vporiadku
+21:33:37:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:38:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:38:INFO:destination romanmobil@10.10.28.79
+21:33:38:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:49:INFO:>>> REFER sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:33:49:INFO:destination mraff@10.10.28.79
+21:33:49:INFO:<<< REFER sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:33:49:INFO:>>> SIP/2.0 202 Akceptovane
+21:33:49:INFO:<<< SIP/2.0 202 Akceptovane
+21:33:49:INFO:>>> INVITE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:49:INFO:destination romanmobil@10.10.28.79
+21:33:49:INFO:<<< INVITE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:49:INFO:>>> SIP/2.0 100 Skusam
+21:33:49:INFO:<<< SIP/2.0 100 Skusam
+21:33:49:INFO:>>> SIP/2.0 200 Vporiadku
+21:33:49:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:49:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:49:INFO:destination romanmobil@10.10.28.79
+21:33:49:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:49:INFO:>>> NOTIFY sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:49:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:49:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
+21:33:49:INFO:destination martin@10.10.28.79
+21:33:49:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
+21:33:49:INFO:>>> SIP/2.0 100 Skusam
+21:33:49:INFO:<<< SIP/2.0 100 Skusam
+21:33:50:INFO:>>> SIP/2.0 180 Zvonim
+21:33:50:INFO:<<< SIP/2.0 180 Zvonim
+21:33:57:INFO:>>> SIP/2.0 200 Vporiadku
+21:33:57:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:57:INFO:>>> NOTIFY sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:33:57:INFO:<<< SIP/2.0 200 Vporiadku
+21:33:58:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:33:58:INFO:destination martin@10.10.28.79
+21:33:58:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:33:59:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:33:59:INFO:destination martin@10.10.28.79
+21:33:59:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:34:00:INFO:>>> SIP/2.0 100 Skusam
+21:34:00:INFO:<<< SIP/2.0 100 Skusam
+21:34:00:INFO:>>> SIP/2.0 200 Vporiadku
+21:34:00:INFO:<<< SIP/2.0 200 Vporiadku
+21:34:00:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:34:00:INFO:destination martin@10.10.28.79
+21:34:00:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:34:22:INFO:>>> BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:34:22:INFO:destination martin@10.10.28.79
+21:34:22:INFO:<<< BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:34:22:INFO:>>> SIP/2.0 200 Vporiadku
+21:34:22:INFO:<<< SIP/2.0 200 Vporiadku
+21:34:28:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:28:INFO:destination romanmobil@10.10.28.79
+21:34:28:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:28:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:28:INFO:destination romanmobil@10.10.28.79
+21:34:28:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:29:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:29:INFO:destination romanmobil@10.10.28.79
+21:34:29:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:31:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:31:INFO:destination romanmobil@10.10.28.79
+21:34:31:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:35:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:35:INFO:destination romanmobil@10.10.28.79
+21:34:35:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:34:35:INFO:>>> SIP/2.0 200 Vporiadku
+21:34:35:INFO:<<< SIP/2.0 200 Vporiadku
+21:35:47:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
+21:35:47:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:01:INFO:>>> INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:36:01:INFO:destination romanmobil@10.10.28.79
+21:36:01:INFO:<<< INVITE sip:romanmobil@10.10.28.79 SIP/2.0
+21:36:01:INFO:>>> SIP/2.0 100 Skusam
+21:36:01:INFO:<<< SIP/2.0 100 Skusam
+21:36:01:INFO:>>> SIP/2.0 180 Zvonim
+21:36:01:INFO:<<< SIP/2.0 180 Zvonim
+21:36:08:INFO:>>> SIP/2.0 200 Vporiadku
+21:36:08:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:09:INFO:>>> SIP/2.0 200 Vporiadku
+21:36:09:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:09:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:09:INFO:destination romanmobil@10.10.28.79
+21:36:09:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:09:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:09:INFO:destination romanmobil@10.10.28.79
+21:36:09:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:30:INFO:>>> REFER sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:36:30:INFO:destination mraff@10.10.28.79
+21:36:30:INFO:<<< REFER sip:mraff@10.10.28.79:64420;transport=udp SIP/2.0
+21:36:30:INFO:>>> SIP/2.0 202 Akceptovane
+21:36:30:INFO:<<< SIP/2.0 202 Akceptovane
+21:36:30:INFO:>>> INVITE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:30:INFO:destination romanmobil@10.10.28.79
+21:36:30:INFO:<<< INVITE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:30:INFO:>>> SIP/2.0 100 Skusam
+21:36:30:INFO:<<< SIP/2.0 100 Skusam
+21:36:30:INFO:>>> SIP/2.0 200 Vporiadku
+21:36:30:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:30:INFO:>>> ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:30:INFO:destination romanmobil@10.10.28.79
+21:36:30:INFO:<<< ACK sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:30:INFO:>>> INVITE sip:martin@10.10.28.79 SIP/2.0
+21:36:30:INFO:destination martin@10.10.28.79
+21:36:30:INFO:<<< INVITE sip:martin@10.10.28.79 SIP/2.0
+21:36:30:INFO:>>> NOTIFY sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:30:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:30:INFO:>>> SIP/2.0 100 Skusam
+21:36:30:INFO:<<< SIP/2.0 100 Skusam
+21:36:30:INFO:>>> SIP/2.0 180 Zvonim
+21:36:30:INFO:<<< SIP/2.0 180 Zvonim
+21:36:34:INFO:>>> SIP/2.0 200 Vporiadku
+21:36:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:34:INFO:>>> NOTIFY sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:36:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:34:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:36:34:INFO:destination martin@10.10.28.79
+21:36:34:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:36:36:INFO:>>> INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:36:36:INFO:destination martin@10.10.28.79
+21:36:36:INFO:<<< INVITE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:36:37:INFO:>>> SIP/2.0 100 Skusam
+21:36:37:INFO:<<< SIP/2.0 100 Skusam
+21:36:37:INFO:>>> SIP/2.0 200 Vporiadku
+21:36:37:INFO:<<< SIP/2.0 200 Vporiadku
+21:36:37:INFO:>>> ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:36:37:INFO:destination martin@10.10.28.79
+21:36:37:INFO:<<< ACK sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:37:34:INFO:>>> BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:37:34:INFO:destination martin@10.10.28.79
+21:37:34:INFO:<<< BYE sip:martin@10.10.39.85:46135;transport=udp SIP/2.0
+21:37:34:INFO:>>> SIP/2.0 200 Vporiadku
+21:37:34:INFO:<<< SIP/2.0 200 Vporiadku
+21:37:39:INFO:>>> BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:37:39:INFO:destination romanmobil@10.10.28.79
+21:37:39:INFO:<<< BYE sip:romanmobil@10.10.30.64:45539;transport=udp SIP/2.0
+21:37:39:INFO:>>> SIP/2.0 200 Vporiadku
+21:37:39:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:07:INFO: SIP bol spusteny na - Mon, 28 Feb 2022 21:40:07 
+21:40:07:INFO:LAPTOP-K5R9Q7M8
+21:40:07:INFO:10.10.28.79
+21:40:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:40:07:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:46135
+21:40:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:07:INFO:>>> PUBLISH sip:roman@10.10.28.79 SIP/2.0
+21:40:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:07:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:40:07:INFO:From: romanmobil@10.10.28.79 - Contact: 10.10.30.64:45539
+21:40:07:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:08:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:08:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:08:INFO:<<< SIP/2.0 503 Service unavailable
+21:40:08:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:40:08:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:65404
+21:40:08:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:08:INFO:>>> ACK sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:40:08:INFO:destination mraff@10.10.28.79
+21:40:08:INFO:>>> PUBLISH sip:pc@10.10.28.79 SIP/2.0
+21:40:08:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:09:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:40:09:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:46135
+21:40:09:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:10:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:40:10:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:65404
+21:40:10:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:10:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
+21:40:10:INFO:<<< SIP/2.0 200 Vporiadku
+21:40:12:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:12:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:12:INFO:<<< SIP/2.0 503 Service unavailable
+21:40:12:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:12:INFO:>>> ACK sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:40:12:INFO:destination mraff@10.10.28.79
+21:40:12:INFO:<<< ACK sip:mraff@10.10.28.79:64420;conf-id=0~q-b;transport=udp SIP/2.0
+21:40:16:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:16:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:20:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:20:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:24:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:24:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:28:INFO:>>> SIP/2.0 503 Service unavailable
+21:40:28:INFO:>>> SIP/2.0 503 Service unavailable
+21:41:49:INFO: SIP bol spusteny na - Mon, 28 Feb 2022 21:41:49 
+21:41:49:INFO:LAPTOP-K5R9Q7M8
+21:41:49:INFO:10.10.28.79
+21:41:50:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:41:50:INFO:From: mraff@10.10.28.79 - Contact: 10.10.28.79:64290
+21:41:50:INFO:<<< SIP/2.0 200 Vporiadku
+21:41:50:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:41:50:INFO:From: romanmobil@10.10.28.79 - Contact: 10.10.30.64:45539
+21:41:50:INFO:<<< SIP/2.0 200 Vporiadku
+21:41:50:INFO:>>> PUBLISH sip:mraff@10.10.28.79 SIP/2.0
+21:41:50:INFO:<<< SIP/2.0 200 Vporiadku
+21:41:50:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:41:50:INFO:From: martin@10.10.28.79 - Contact: 10.10.39.85:46135
+21:41:50:INFO:<<< SIP/2.0 200 Vporiadku
+21:41:52:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:41:52:INFO:From: pc@10.10.28.79 - Contact: 10.10.28.79:64290
+21:41:52:INFO:<<< SIP/2.0 200 Vporiadku
+21:41:52:INFO:>>> PUBLISH sip:pc@10.10.28.79 SIP/2.0
+21:41:52:INFO:<<< SIP/2.0 200 Vporiadku
+21:41:52:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:41:52:INFO:From: mobil@10.10.28.79 - Contact: 10.10.39.85:46135
+21:41:52:INFO:<<< SIP/2.0 200 Vporiadku
+21:42:08:INFO:>>> REGISTER sip:10.10.28.79 SIP/2.0
+21:42:08:INFO:From: roman@10.10.28.79 - Contact: 10.10.30.7:60452
+21:42:08:INFO:<<< SIP/2.0 200 Vporiadku
